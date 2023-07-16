@@ -1,0 +1,3046 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-1244-g67552c31da 2nd stage bootloader[0m
+[0;32mI (34) boot: compile time Jun 28 2023 19:54:02[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23568h (144744) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00033590 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000335a0 vaddr=3ffb0000 size=038b0h ( 14512) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00036e58 vaddr=40080000 size=091c0h ( 37312) load[0m
+[0;32mI (190) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=85ccch (548044) map[0m
+[0;32mI (389) esp_image: segment 5: paddr=000c5cf4 vaddr=400891c0 size=0ef34h ( 61236) load[0m
+[0;32mI (414) esp_image: segment 6: paddr=000d4c30 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (427) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (427) boot: Disabling RNG early entropy source...[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (439) cpu_start: Pro cpu up.[0m
+[0;32mI (439) cpu_start: Starting app cpu, entry point is 0x4008144c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     eInk[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun 28 2023 19:53:50[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  e7a915ec7e15b161...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2-dev-1244-g67552c31da[0m
+[0;32mI (489) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (494) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (498) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (503) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFB79F0 len 00028610 (161 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 400980F4 len 00007F0C (31 KiB): IRAM[0m
+[0;32mI (543) spi_flash: detected chip: gd[0m
+[0;32mI (546) spi_flash: flash io: dio[0m
+[0;33mW (550) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (564) app_start: Starting scheduler on CPU0[0m
+[0;32mI (568) app_start: Starting scheduler on CPU1[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (578) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (588) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (598) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (628) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) wifi: ESP_WIFI_MODE_STA[0m
+I (688) wifi:wifi driver task: 3ffbfb74, prio:23, stack:6656, core=0
+I (698) wifi:wifi firmware version: d23f612
+I (708) wifi:wifi certification version: v7.0
+I (708) wifi:config NVS flash: enabled
+I (708) wifi:config nano formating: disabled
+I (708) wifi:Init data frame dynamic rx buffer num: 32
+I (708) wifi:Init management frame dynamic rx buffer num: 32
+I (718) wifi:Init management short buffer num: 32
+I (718) wifi:Init dynamic tx buffer num: 32
+I (728) wifi:Init static rx buffer size: 1600
+I (728) wifi:Init static rx buffer num: 10
+I (738) wifi:Init dynamic rx buffer num: 32
+[0;32mI (738) wifi_init: rx ba win: 6[0m
+[0;32mI (738) wifi_init: tcpip mbox: 32[0m
+[0;32mI (748) wifi_init: udp mbox: 6[0m
+[0;32mI (748) wifi_init: tcp mbox: 6[0m
+[0;32mI (758) wifi_init: tcp tx win: 5744[0m
+[0;32mI (758) wifi_init: tcp rx win: 5744[0m
+[0;32mI (758) wifi_init: tcp mss: 1440[0m
+[0;32mI (768) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (768) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (778) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (888) wifi:mode : sta (d4:d4:da:83:e5:64)
+I (888) wifi:enable tsf
+[0;32mI (888) wifi: wifi_init_sta finished.[0m
+I (918) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (918) wifi:state: init -> auth (b0)
+I (928) wifi:state: auth -> assoc (0)
+I (938) wifi:state: assoc -> run (10)
+I (968) wifi:connected with Nikola Tesla, aid = 2, channel 6, BW20, bssid = f8:85:f9:18:8c:99
+I (968) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+I (968) wifi:pm start, type: 1
+
+I (988) wifi:<ba-add>idx:0 (ifx:0, f8:85:f9:18:8c:99), tid:6, ssn:2, winSize:64
+I (1018) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1978) esp_netif_handlers: sta ip: 172.31.0.121, mask: 255.255.255.0, gw: 172.31.0.1[0m
+[0;32mI (1978) wifi: got ip:172.31.0.121[0m
+[0;32mI (1978) wifi: connected to ap SSID:Nikola Tesla password:Feb152020[0m
+[0;32mI (1988) sleep: Enabling timer wakeup
+[0m
+[0;32mI (1988) main_task: Returned from app_main()[0m
+[0;32mI (2048) sleep: Touch pad #8 average: 1549, wakeup threshold set to 1449.
+[0m
+[0;32mI (2078) sleep: Touch pad #9 average: 1558, wakeup threshold set to 1458.
+[0m
+[0;32mI (2108) sleep: Enabling touch pad wakeup
+[0m
+[0;32mI (2108) wifi: Socket created, connecting to 172.31.0.115:21520[0m
+I (2128) wifi:<ba-add>idx:1 (ifx:0, f8:85:f9:18:8c:99), tid:0, ssn:0, winSize:64
+[0;32mI (2138) wifi: Successfully connected[0m
+[0;32mI (2148) wifi: Received 1400 bytes 0.0011, 00[0m
+[0;32mI (2148) wifi: Wifi Spaces Left:69[0m
+[0;32mI (2148) wifi: Received 1400 bytes 0.0021, dddd[0m
+[0;32mI (2158) wifi: Wifi Spaces Left:68[0m
+[0;32mI (2158) wifi: Received 1400 bytes 0.0032, 00[0m
+[0;32mI (2168) wifi: Wifi Spaces Left:67[0m
+[0;32mI (2168) wifi: Received 1400 bytes 0.0043, cccc[0m
+[0;32mI (2178) wifi: Wifi Spaces Left:66[0m
+[0;32mI (2178) wifi: Received 1400 bytes 0.0053, 00[0m
+[0;32mI (2178) wifi: Wifi Spaces Left:65[0m
+[0;32mI (2188) wifi: Received 1400 bytes 0.0064, 3333[0m
+[0;32mI (2188) wifi: Wifi Spaces Left:64[0m
+[0;32mI (2198) wifi: Received 1400 bytes 0.0075, 00[0m
+[0;32mI (2198) wifi: Wifi Spaces Left:63[0m
+[0;32mI (2208) wifi: Received 280 bytes 0.0077, eeee[0m
+[0;32mI (2208) wifi: Wifi Spaces Left:62[0m
+[0;32mI (2218) wifi: Received 1400 bytes 0.0087, 00[0m
+[0;32mI (2218) wifi: Wifi Spaces Left:61[0m
+[0;32mI (2228) wifi: Received 1400 bytes 0.0098, eddd[0m
+[0;32mI (2228) wifi: Wifi Spaces Left:60[0m
+[0;32mI (2228) wifi: Received 1400 bytes 0.0109, 00[0m
+[0;32mI (2238) wifi: Wifi Spaces Left:59[0m
+[0;32mI (2238) wifi: Received 1400 bytes 0.0119, eeee[0m
+[0;32mI (2248) wifi: Wifi Spaces Left:58[0m
+[0;32mI (2248) wifi: Received 1400 bytes 0.0130, e00[0m
+[0;32mI (2258) wifi: Wifi Spaces Left:57[0m
+[0;32mI (2258) wifi: Received 200 bytes 0.0131, eeee[0m
+[0;32mI (2268) wifi: Wifi Spaces Left:56[0m
+[0;32mI (2268) wifi: Received 1400 bytes 0.0142, eeee[0m
+[0;32mI (2278) wifi: Wifi Spaces Left:55[0m
+[0;32mI (2278) wifi: Received 1400 bytes 0.0153, 00[0m
+[0;32mI (2288) wifi: Wifi Spaces Left:54[0m
+[0;32mI (2288) wifi: Received 1400 bytes 0.0163, eeee[0m
+[0;32mI (2288) wifi: Wifi Spaces Left:53[0m
+[0;32mI (2298) wifi: Received 1400 bytes 0.0174, 00[0m
+[0;32mI (2298) wifi: Wifi Spaces Left:52[0m
+[0;32mI (2308) wifi: Received 1400 bytes 0.0185, eede[0m
+[0;32mI (2308) wifi: Wifi Spaces Left:51[0m
+[0;32mI (2318) wifi: Received 200 bytes 0.0186, 00[0m
+[0;32mI (2318) wifi: Wifi Spaces Left:50[0m
+[0;32mI (2328) wifi: Received 1400 bytes 0.0197, 00[0m
+[0;32mI (2328) wifi: Wifi Spaces Left:49[0m
+[0;32mI (2338) wifi: Received 1400 bytes 0.0208, 00[0m
+[0;32mI (2338) wifi: Wifi Spaces Left:48[0m
+[0;32mI (2338) wifi: Received 1400 bytes 0.0218, 00[0m
+[0;32mI (2348) wifi: Wifi Spaces Left:47[0m
+[0;32mI (2348) wifi: Received 1400 bytes 0.0229, edde[0m
+[0;32mI (2358) wifi: Wifi Spaces Left:46[0m
+[0;32mI (2358) wifi: Received 1400 bytes 0.0240, 00[0m
+[0;32mI (2368) wifi: Wifi Spaces Left:45[0m
+[0;32mI (2368) wifi: Received 1400 bytes 0.0250, e830[0m
+[0;32mI (2378) wifi: Wifi Spaces Left:44[0m
+[0;32mI (2378) wifi: Received 1400 bytes 0.0261, 00[0m
+[0;32mI (2388) wifi: Wifi Spaces Left:43[0m
+[0;32mI (2388) wifi: Received 1400 bytes 0.0272, dddd[0m
+[0;32mI (2398) wifi: Wifi Spaces Left:42[0m
+[0;32mI (2398) wifi: Received 1400 bytes 0.0282, 00[0m
+[0;32mI (2398) wifi: Wifi Spaces Left:41[0m
+[0;32mI (2408) wifi: Received 360 bytes 0.0285, aaaa[0m
+[0;32mI (2408) wifi: Wifi Spaces Left:40[0m
+[0;32mI (2438) wifi: Received 1400 bytes 0.0296, 00[0m
+[0;32mI (2438) wifi: Wifi Spaces Left:39[0m
+[0;32mI (2438) wifi: Received 1400 bytes 0.0306, 00[0m
+[0;32mI (2438) wifi: Wifi Spaces Left:38[0m
+[0;32mI (2448) wifi: Received 1400 bytes 0.0317, 00[0m
+[0;32mI (2448) wifi: Wifi Spaces Left:37[0m
+[0;32mI (2458) wifi: Received 1400 bytes 0.0328, 4de[0m
+[0;32mI (2458) wifi: Wifi Spaces Left:36[0m
+[0;32mI (2458) wifi: Received 1400 bytes 0.0338, 00[0m
+[0;32mI (2468) wifi: Wifi Spaces Left:35[0m
+[0;32mI (2468) wifi: Received 1400 bytes 0.0349, deee[0m
+[0;32mI (2478) wifi: Wifi Spaces Left:34[0m
+[0;32mI (2478) wifi: Received 1400 bytes 0.0359, 00[0m
+[0;32mI (2488) wifi: Wifi Spaces Left:33[0m
+[0;32mI (2488) wifi: Received 1400 bytes 0.0370, 012[0m
+[0;32mI (2498) wifi: Wifi Spaces Left:32[0m
+[0;32mI (2498) wifi: Received 1400 bytes 0.0381, 00[0m
+[0;32mI (2508) wifi: Wifi Spaces Left:31[0m
+[0;32mI (2508) wifi: Received 360 bytes 0.0384, 300[0m
+[0;32mI (2518) wifi: Wifi Spaces Left:30[0m
+[0;32mI (2518) wifi: Received 1400 bytes 0.0394, 00[0m
+[0;32mI (2518) wifi: Wifi Spaces Left:29[0m
+[0;32mI (2528) wifi: Received 1400 bytes 0.0405, 04[0m
+[0;32mI (2528) wifi: Wifi Spaces Left:28[0m
+[0;32mI (2538) wifi: Received 1400 bytes 0.0415, 00[0m
+[0;32mI (2538) wifi: Wifi Spaces Left:27[0m
+[0;32mI (2548) wifi: Received 1400 bytes 0.0426, eeee[0m
+[0;32mI (2548) wifi: Wifi Spaces Left:26[0m
+[0;32mI (2558) wifi: Received 1400 bytes 0.0437, 00[0m
+[0;32mI (2558) wifi: Wifi Spaces Left:25[0m
+[0;32mI (2568) wifi: Received 1400 bytes 0.0447, eeee[0m
+[0;32mI (2568) wifi: Wifi Spaces Left:24[0m
+[0;32mI (2568) wifi: Received 1400 bytes 0.0458, 00[0m
+[0;32mI (2578) wifi: Wifi Spaces Left:23[0m
+[0;32mI (2578) wifi: Received 1400 bytes 0.0469, eeee[0m
+[0;32mI (2588) wifi: Wifi Spaces Left:22[0m
+[0;32mI (2588) wifi: Received 1400 bytes 0.0479, 00[0m
+[0;32mI (2598) wifi: Wifi Spaces Left:21[0m
+[0;32mI (2598) wifi: Received 1400 bytes 0.0490, edee[0m
+[0;32mI (2608) wifi: Wifi Spaces Left:20[0m
+[0;32mI (2608) wifi: Received 1400 bytes 0.0501, 00[0m
+[0;32mI (2618) wifi: Wifi Spaces Left:19[0m
+[0;32mI (2618) wifi: Received 440 bytes 0.0504, 37a[0m
+[0;32mI (2628) wifi: Wifi Spaces Left:18[0m
+[0;32mI (2628) wifi: Received 1400 bytes 0.0515, 00[0m
+[0;32mI (2628) wifi: Wifi Spaces Left:17[0m
+[0;32mI (2638) wifi: Received 1400 bytes 0.0525, eded[0m
+[0;32mI (2638) wifi: Wifi Spaces Left:16[0m
+[0;32mI (2648) wifi: Received 1400 bytes 0.0536, 00[0m
+[0;32mI (2648) wifi: Wifi Spaces Left:15[0m
+[0;32mI (2658) wifi: Received 1400 bytes 0.0547, eeee[0m
+[0;32mI (2658) wifi: Wifi Spaces Left:14[0m
+[0;32mI (2668) wifi: Received 1400 bytes 0.0557, e00[0m
+[0;32mI (2668) wifi: Wifi Spaces Left:13[0m
+[0;32mI (2678) wifi: Received 1400 bytes 0.0568, eeee[0m
+[0;32mI (2678) wifi: Wifi Spaces Left:12[0m
+[0;32mI (2678) wifi: Received 1400 bytes 0.0579, eeee[0m
+[0;32mI (2688) wifi: Wifi Spaces Left:11[0m
+[0;32mI (2688) wifi: Received 1400 bytes 0.0589, 00[0m
+[0;32mI (2698) wifi: Wifi Spaces Left:10[0m
+[0;32mI (2698) wifi: Received 1400 bytes 0.0600, eeee[0m
+[0;32mI (2708) wifi: Wifi Spaces Left:9[0m
+[0;32mI (2708) wifi: Received 360 bytes 0.0603, 00[0m
+[0;32mI (2718) wifi: Wifi Spaces Left:8[0m
+[0;32mI (2728) wifi: Received 1400 bytes 0.0613, eeee[0m
+[0;32mI (2728) wifi: Wifi Spaces Left:7[0m
+[0;32mI (2728) wifi: Received 1400 bytes 0.0624, 00[0m
+[0;32mI (2738) wifi: Wifi Spaces Left:6[0m
+[0;32mI (2738) wifi: Received 80 bytes 0.0625, eeee[0m
+[0;32mI (2738) wifi: Wifi Spaces Left:5[0m
+[0;32mI (2748) wifi: Received 1400 bytes 0.0635, eeee[0m
+[0;32mI (2748) wifi: Wifi Spaces Left:4[0m
+[0;32mI (2758) wifi: Received 1400 bytes 0.0646, 00[0m
+[0;32mI (2758) wifi: Wifi Spaces Left:3[0m
+[0;32mI (2768) wifi: Received 1400 bytes 0.0657, dddd[0m
+[0;32mI (2768) wifi: Wifi Spaces Left:2[0m
+[0;32mI (2778) wifi: Received 1400 bytes 0.0667, 00[0m
+[0;32mI (2778) wifi: Wifi Spaces Left:1[0m
+[0;32mI (2788) wifi: Received 1400 bytes 0.0678, 9988[0m
+[0;32mI (2788) wifi: Wifi Spaces Left:0[0m
+[0;32mI (2788) wifi: Received 1400 bytes 0.0689, 00[0m
+[0;32mI (3108) SPI: Width and Height: 0,0[0m
+[0;32mI (4338) SPI: Width and Height: 1872,1404[0m
+[0;32mI (4338) SPI: VCOM a28[0m
+[0;32mI (4778) SPI: VCOM 4e2[0m
+[0;32mI (4818) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (4828) SPI: SPI  Spaces Left:2 dddd[0m
+[0;32mI (4848) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (4868) SPI: SPI  Spaces Left:4 cccc[0m
+[0;32mI (4878) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (4898) SPI: SPI  Spaces Left:6 3333[0m
+[0;32mI (4918) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (4928) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (4938) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (4948) SPI: SPI  Spaces Left:10 eddd[0m
+[0;32mI (4968) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (4988) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (4998) wifi: Wifi Spaces Left:11[0m
+[0;32mI (5008) wifi: Received 1400 bytes 0.0699, 6666[0m
+[0;32mI (5008) wifi: Wifi Spaces Left:10[0m
+[0;32mI (5008) wifi: Received 1400 bytes 0.0710, 00[0m
+[0;32mI (5008) SPI: SPI  Spaces Left:11 e00[0m
+[0;32mI (5008) wifi: Wifi Spaces Left:10[0m
+[0;32mI (5018) wifi: Received 1400 bytes 0.0720, dddd[0m
+[0;32mI (5018) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5028) wifi: Received 1400 bytes 0.0731, 00[0m
+[0;32mI (5028) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5028) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (5038) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (5038) wifi: Received 1400 bytes 0.0742, eeee[0m
+[0;32mI (5048) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5058) wifi: Received 1400 bytes 0.0752, 00[0m
+[0;32mI (5058) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5068) wifi: Received 1400 bytes 0.0763, edee[0m
+[0;32mI (5068) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (5068) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5078) wifi: Received 1400 bytes 0.0774, 00[0m
+[0;32mI (5078) wifi: Wifi Spaces Left:7[0m
+[0;32mI (5088) wifi: Received 1400 bytes 0.0784, eeee[0m
+[0;32mI (5088) wifi: Wifi Spaces Left:6[0m
+[0;32mI (5088) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (5098) wifi: Received 1400 bytes 0.0795, 00[0m
+[0;32mI (5098) wifi: Wifi Spaces Left:6[0m
+[0;32mI (5108) wifi: Received 1400 bytes 0.0806, 2221[0m
+[0;32mI (5108) wifi: Wifi Spaces Left:5[0m
+[0;32mI (5118) wifi: Received 1400 bytes 0.0816, 00[0m
+[0;32mI (5118) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (5118) wifi: Wifi Spaces Left:5[0m
+[0;32mI (5128) wifi: Received 1400 bytes 0.0827, ddcc[0m
+[0;32mI (5138) wifi: Wifi Spaces Left:4[0m
+[0;32mI (5138) wifi: Received 1400 bytes 0.0838, 00[0m
+[0;32mI (5138) wifi: Wifi Spaces Left:3[0m
+[0;32mI (5138) SPI: SPI  Spaces Left:4 eede[0m
+[0;32mI (5148) wifi: Received 1400 bytes 0.0848, dddd[0m
+[0;32mI (5158) wifi: Wifi Spaces Left:3[0m
+[0;32mI (5158) wifi: Received 1400 bytes 0.0859, 00[0m
+[0;32mI (5168) wifi: Wifi Spaces Left:2[0m
+[0;32mI (5168) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (5168) wifi: Received 880 bytes 0.0866, deee[0m
+[0;32mI (5178) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (5178) wifi: Wifi Spaces Left:3[0m
+[0;32mI (5188) wifi: Received 1400 bytes 0.0876, dddd[0m
+[0;32mI (5188) wifi: Wifi Spaces Left:2[0m
+[0;32mI (5198) wifi: Received 1400 bytes 0.0887, 00[0m
+[0;32mI (5198) wifi: Wifi Spaces Left:1[0m
+[0;32mI (5198) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (5208) wifi: Received 1400 bytes 0.0898, eeee[0m
+[0;32mI (5218) wifi: Wifi Spaces Left:1[0m
+[0;32mI (5228) wifi: Received 1400 bytes 0.0908, 00[0m
+[0;32mI (5228) wifi: Wifi Spaces Left:0[0m
+[0;32mI (5228) wifi: Received 1400 bytes 0.0919, dddd[0m
+[0;32mI (5228) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (5228) wifi: Wifi Spaces Left:0[0m
+[0;32mI (5248) wifi: Received 1400 bytes 0.0930, 00[0m
+[0;32mI (5258) SPI: SPI  Spaces Left:1 edde[0m
+[0;32mI (5268) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (5288) SPI: SPI  Spaces Left:3 e830[0m
+[0;32mI (5308) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (5328) SPI: SPI  Spaces Left:5 dddd[0m
+[0;32mI (5338) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (5358) SPI: SPI  Spaces Left:7 aaaa[0m
+[0;32mI (5358) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (5378) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (5398) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (5418) SPI: SPI  Spaces Left:11 4de[0m
+[0;32mI (5428) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (5448) wifi: Wifi Spaces Left:11[0m
+[0;32mI (5448) SPI: SPI  Spaces Left:12 deee[0m
+[0;32mI (5448) wifi: Received 1400 bytes 0.0940, 00[0m
+[0;32mI (5448) wifi: Wifi Spaces Left:11[0m
+[0;32mI (5458) wifi: Received 1400 bytes 0.0951, 00[0m
+[0;32mI (5458) wifi: Wifi Spaces Left:10[0m
+[0;32mI (5468) wifi: Received 1400 bytes 0.0962, 00[0m
+[0;32mI (5468) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5468) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (5478) wifi: Received 360 bytes 0.0964, 00[0m
+[0;32mI (5478) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5488) wifi: Received 1400 bytes 0.0975, eeee[0m
+[0;32mI (5488) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5498) wifi: Received 1400 bytes 0.0986, 00[0m
+[0;32mI (5498) SPI: SPI  Spaces Left:9 012[0m
+[0;32mI (5498) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5518) wifi: Received 1400 bytes 0.0996, eeee[0m
+[0;32mI (5518) wifi: Wifi Spaces Left:7[0m
+[0;32mI (5528) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (5528) wifi: Received 1400 bytes 0.1007, 00[0m
+[0;32mI (5528) wifi: Wifi Spaces Left:7[0m
+[0;32mI (5528) wifi: Received 1400 bytes 0.1018, 01[0m
+[0;32mI (5538) wifi: Wifi Spaces Left:6[0m
+[0;32mI (5538) wifi: Received 1400 bytes 0.1028, 00[0m
+[0;32mI (5548) wifi: Wifi Spaces Left:5[0m
+[0;32mI (5548) SPI: SPI  Spaces Left:6 300[0m
+[0;32mI (5548) wifi: Received 1400 bytes 0.1039, 00[0m
+[0;32mI (5558) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (5558) wifi: Wifi Spaces Left:6[0m
+[0;32mI (5568) wifi: Received 1400 bytes 0.1050, 00[0m
+[0;32mI (5568) wifi: Wifi Spaces Left:5[0m
+[0;32mI (5578) wifi: Received 1400 bytes 0.1060, 00[0m
+[0;32mI (5578) SPI: SPI  Spaces Left:6 04[0m
+[0;32mI (5578) wifi: Wifi Spaces Left:5[0m
+[0;32mI (5598) wifi: Received 360 bytes 0.1063, 00[0m
+[0;32mI (5598) wifi: Wifi Spaces Left:4[0m
+[0;32mI (5598) wifi: Received 1400 bytes 0.1074, 00[0m
+[0;32mI (5598) wifi: Wifi Spaces Left:3[0m
+[0;32mI (5608) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (5608) wifi: Received 1400 bytes 0.1084, 00[0m
+[0;32mI (5618) wifi: Wifi Spaces Left:3[0m
+[0;32mI (5628) wifi: Received 1400 bytes 0.1095, 00[0m
+[0;32mI (5628) wifi: Wifi Spaces Left:2[0m
+[0;32mI (5628) SPI: SPI  Spaces Left:3 eeee[0m
+[0;32mI (5628) wifi: Received 1400 bytes 0.1106, eeee[0m
+[0;32mI (5638) wifi: Wifi Spaces Left:2[0m
+[0;32mI (5638) wifi: Received 1400 bytes 0.1116, 00[0m
+[0;32mI (5648) wifi: Wifi Spaces Left:1[0m
+[0;32mI (5648) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (5648) wifi: Received 1400 bytes 0.1127, eeee[0m
+[0;32mI (5658) wifi: Wifi Spaces Left:1[0m
+[0;32mI (5668) wifi: Received 1400 bytes 0.1137, 00[0m
+[0;32mI (5668) wifi: Wifi Spaces Left:0[0m
+[0;32mI (5678) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (5688) wifi: Received 1400 bytes 0.1148, 00[0m
+[0;32mI (5688) wifi: Wifi Spaces Left:0[0m
+[0;32mI (5688) wifi: Received 1400 bytes 0.1159, 00[0m
+[0;32mI (5698) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (5718) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (5728) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (5748) SPI: SPI  Spaces Left:4 edee[0m
+[0;32mI (5768) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (5788) SPI: SPI  Spaces Left:6 37a[0m
+[0;32mI (5788) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (5808) SPI: SPI  Spaces Left:8 eded[0m
+[0;32mI (5828) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (5838) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (5858) SPI: SPI  Spaces Left:11 e00[0m
+[0;32mI (5878) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (5888) wifi: Wifi Spaces Left:11[0m
+[0;32mI (5898) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (5898) wifi: Received 1400 bytes 0.1169, 00[0m
+[0;32mI (5898) wifi: Wifi Spaces Left:11[0m
+[0;32mI (5898) wifi: Received 1400 bytes 0.1180, 00[0m
+[0;32mI (5908) wifi: Wifi Spaces Left:10[0m
+[0;32mI (5908) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (5918) wifi: Received 1400 bytes 0.1191, 00[0m
+[0;32mI (5918) wifi: Wifi Spaces Left:10[0m
+[0;32mI (5918) wifi: Received 1400 bytes 0.1201, 00[0m
+[0;32mI (5928) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5928) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (5928) wifi: Received 1400 bytes 0.1212, eeee[0m
+[0;32mI (5938) wifi: Wifi Spaces Left:9[0m
+[0;32mI (5948) wifi: Received 1400 bytes 0.1223, 00[0m
+[0;32mI (5948) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5958) wifi: Received 1400 bytes 0.1233, 00[0m
+[0;32mI (5958) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (5958) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5968) wifi: Received 1400 bytes 0.1244, 00[0m
+[0;32mI (5968) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (5968) wifi: Wifi Spaces Left:8[0m
+[0;32mI (5988) wifi: Received 1400 bytes 0.1255, 00[0m
+[0;32mI (5988) wifi: Wifi Spaces Left:7[0m
+[0;32mI (5998) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (5998) wifi: Received 1400 bytes 0.1265, 00[0m
+[0;32mI (5998) wifi: Wifi Spaces Left:7[0m
+[0;32mI (5998) wifi: Received 1400 bytes 0.1276, 00[0m
+[0;32mI (6008) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6008) wifi: Received 1400 bytes 0.1287, 00[0m
+[0;32mI (6018) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (6018) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6018) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (6028) wifi: Received 840 bytes 0.1293, eeee[0m
+[0;32mI (6038) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6038) wifi: Received 1400 bytes 0.1304, 00[0m
+[0;32mI (6048) wifi: Wifi Spaces Left:5[0m
+[0;32mI (6048) wifi: Received 1400 bytes 0.1314, 00[0m
+[0;32mI (6048) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (6048) wifi: Wifi Spaces Left:5[0m
+[0;32mI (6058) wifi: Received 1400 bytes 0.1325, 00[0m
+[0;32mI (6068) wifi: Wifi Spaces Left:4[0m
+[0;32mI (6078) wifi: Received 1400 bytes 0.1336, 00[0m
+[0;32mI (6078) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6078) SPI: SPI  Spaces Left:4 dddd[0m
+[0;32mI (6078) wifi: Received 1400 bytes 0.1346, 00[0m
+[0;32mI (6088) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6098) wifi: Received 1400 bytes 0.1357, 00[0m
+[0;32mI (6098) wifi: Wifi Spaces Left:2[0m
+[0;32mI (6098) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (6098) wifi: Received 1400 bytes 0.1368, 00[0m
+[0;32mI (6108) wifi: Wifi Spaces Left:2[0m
+[0;32mI (6118) wifi: Received 1400 bytes 0.1378, 00[0m
+[0;32mI (6118) wifi: Wifi Spaces Left:1[0m
+[0;32mI (6128) wifi: Received 1400 bytes 0.1389, ed92[0m
+[0;32mI (6128) SPI: SPI  Spaces Left:2 9988[0m
+[0;32mI (6128) wifi: Wifi Spaces Left:1[0m
+[0;32mI (6138) wifi: Received 1400 bytes 0.1400, 00[0m
+[0;32mI (6148) wifi: Wifi Spaces Left:0[0m
+[0;32mI (6148) wifi: Received 1400 bytes 0.1410, eeee[0m
+[0;32mI (6148) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (6168) SPI: SPI  Spaces Left:2 6666[0m
+[0;32mI (6188) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (6208) SPI: SPI  Spaces Left:4 dddd[0m
+[0;32mI (6218) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (6238) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (6258) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (6278) SPI: SPI  Spaces Left:8 edee[0m
+[0;32mI (6288) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (6308) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (6328) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (6348) SPI: SPI  Spaces Left:12 2221[0m
+[0;32mI (6348) wifi: Wifi Spaces Left:11[0m
+[0;32mI (6358) wifi: Received 1400 bytes 0.1421, 00[0m
+[0;32mI (6358) wifi: Wifi Spaces Left:10[0m
+[0;32mI (6358) wifi: Received 1400 bytes 0.1432, eeee[0m
+[0;32mI (6358) wifi: Wifi Spaces Left:9[0m
+[0;32mI (6368) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (6368) wifi: Received 1400 bytes 0.1442, 00[0m
+[0;32mI (6378) wifi: Wifi Spaces Left:9[0m
+[0;32mI (6378) wifi: Received 1400 bytes 0.1453, eeee[0m
+[0;32mI (6388) wifi: Wifi Spaces Left:8[0m
+[0;32mI (6388) SPI: SPI  Spaces Left:9 ddcc[0m
+[0;32mI (6388) wifi: Received 1400 bytes 0.1463, 00[0m
+[0;32mI (6398) wifi: Wifi Spaces Left:8[0m
+[0;32mI (6408) wifi: Received 1400 bytes 0.1474, edde[0m
+[0;32mI (6408) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6418) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6418) wifi: Received 1400 bytes 0.1485, 00[0m
+[0;32mI (6418) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6428) wifi: Received 1400 bytes 0.1495, 00[0m
+[0;32mI (6428) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6438) SPI: SPI  Spaces Left:7 dddd[0m
+[0;32mI (6438) wifi: Received 1400 bytes 0.1506, 00[0m
+[0;32mI (6438) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6448) wifi: Received 1400 bytes 0.1517, 00[0m
+[0;32mI (6448) wifi: Wifi Spaces Left:5[0m
+[0;32mI (6458) wifi: Received 1400 bytes 0.1527, 00[0m
+[0;32mI (6458) wifi: Wifi Spaces Left:4[0m
+[0;32mI (6458) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (6468) wifi: Received 1400 bytes 0.1538, 00[0m
+[0;32mI (6478) wifi: Wifi Spaces Left:4[0m
+[0;32mI (6478) wifi: Received 1400 bytes 0.1549, 00[0m
+[0;32mI (6478) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6488) wifi: Received 1400 bytes 0.1559, 00[0m
+[0;32mI (6488) SPI: SPI  Spaces Left:4 deee[0m
+[0;32mI (6488) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6498) wifi: Received 1400 bytes 0.1570, 00[0m
+[0;32mI (6508) wifi: Wifi Spaces Left:2[0m
+[0;32mI (6508) SPI: SPI  Spaces Left:3 dddd[0m
+[0;32mI (6508) wifi: Received 1400 bytes 0.1581, dd92[0m
+[0;32mI (6518) wifi: Wifi Spaces Left:2[0m
+[0;32mI (6528) wifi: Received 1080 bytes 0.1589, 00[0m
+[0;32mI (6528) wifi: Wifi Spaces Left:1[0m
+[0;32mI (6528) wifi: Received 1400 bytes 0.1600, 00[0m
+[0;32mI (6528) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (6538) wifi: Wifi Spaces Left:1[0m
+[0;32mI (6548) wifi: Received 1400 bytes 0.1610, 200[0m
+[0;32mI (6548) wifi: Wifi Spaces Left:0[0m
+[0;32mI (6558) wifi: Received 1400 bytes 0.1621, 00[0m
+[0;32mI (6558) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (6578) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (6598) SPI: SPI  Spaces Left:3 dddd[0m
+[0;32mI (6618) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (6628) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (6648) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (6668) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (6678) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6688) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (6698) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (6718) SPI: SPI  Spaces Left:11 eeee[0m
+[0;32mI (6738) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (6748) SPI: SPI  Spaces Left:13 01[0m
+[0;32mI (6758) wifi: Wifi Spaces Left:12[0m
+[0;32mI (6768) wifi: Received 1400 bytes 0.1631, eeee[0m
+[0;32mI (6768) wifi: Wifi Spaces Left:11[0m
+[0;32mI (6768) wifi: Received 1400 bytes 0.1642, 00[0m
+[0;32mI (6768) wifi: Wifi Spaces Left:10[0m
+[0;32mI (6768) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (6778) wifi: Received 1400 bytes 0.1653, eeee[0m
+[0;32mI (6778) wifi: Wifi Spaces Left:10[0m
+[0;32mI (6788) wifi: Received 1400 bytes 0.1663, 00[0m
+[0;32mI (6788) wifi: Wifi Spaces Left:9[0m
+[0;32mI (6798) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (6798) wifi: Received 1400 bytes 0.1674, eeee[0m
+[0;32mI (6808) wifi: Wifi Spaces Left:9[0m
+[0;32mI (6808) wifi: Received 1400 bytes 0.1685, 00[0m
+[0;32mI (6818) wifi: Wifi Spaces Left:8[0m
+[0;32mI (6818) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (6818) wifi: Received 1400 bytes 0.1695, 026[0m
+[0;32mI (6828) wifi: Wifi Spaces Left:8[0m
+[0;32mI (6828) wifi: Received 1400 bytes 0.1706, 00[0m
+[0;32mI (6838) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6838) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6838) wifi: Received 1400 bytes 0.1717, 00[0m
+[0;32mI (6848) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6868) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6868) wifi: Received 1400 bytes 0.1727, 00[0m
+[0;32mI (6868) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6878) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6888) wifi: Received 1400 bytes 0.1738, 00[0m
+[0;32mI (6888) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6898) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (6898) wifi: Received 1400 bytes 0.1749, 00[0m
+[0;32mI (6898) wifi: Wifi Spaces Left:7[0m
+[0;32mI (6908) wifi: Received 1400 bytes 0.1759, eedd[0m
+[0;32mI (6908) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6908) wifi: Received 1400 bytes 0.1770, 00[0m
+[0;32mI (6908) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (6918) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6938) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (6938) wifi: Received 1400 bytes 0.1781, eeee[0m
+[0;32mI (6938) wifi: Wifi Spaces Left:6[0m
+[0;32mI (6938) wifi: Received 1400 bytes 0.1791, 00[0m
+[0;32mI (6948) wifi: Wifi Spaces Left:5[0m
+[0;32mI (6948) wifi: Received 1400 bytes 0.1802, eeee[0m
+[0;32mI (6948) wifi: Wifi Spaces Left:4[0m
+[0;32mI (6958) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (6958) wifi: Received 1400 bytes 0.1813, 00[0m
+[0;32mI (6968) wifi: Wifi Spaces Left:4[0m
+[0;32mI (6978) wifi: Received 1400 bytes 0.1823, eeee[0m
+[0;32mI (6978) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6978) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (6978) wifi: Received 1400 bytes 0.1834, 00[0m
+[0;32mI (6988) wifi: Wifi Spaces Left:3[0m
+[0;32mI (6998) wifi: Received 1400 bytes 0.1845, eeee[0m
+[0;32mI (6998) wifi: Wifi Spaces Left:2[0m
+[0;32mI (6998) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (6998) wifi: Received 1400 bytes 0.1855, 00[0m
+[0;32mI (7008) wifi: Wifi Spaces Left:2[0m
+[0;32mI (7018) wifi: Received 1400 bytes 0.1866, eeee[0m
+[0;32mI (7018) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7028) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (7028) wifi: Received 1400 bytes 0.1877, 00[0m
+[0;32mI (7038) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7038) wifi: Received 1400 bytes 0.1887, eeee[0m
+[0;32mI (7038) wifi: Wifi Spaces Left:0[0m
+[0;32mI (7048) wifi: Received 1400 bytes 0.1898, 00[0m
+[0;32mI (7048) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (7048) wifi: Wifi Spaces Left:0[0m
+[0;32mI (7068) wifi: Received 1400 bytes 0.1908, eeee[0m
+[0;32mI (7078) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (7088) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (7108) Main: Manage Tasks Idle[0m
+[0;32mI (7108) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (7128) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (7148) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (7158) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (7178) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (7198) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (7208) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (7228) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (7248) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (7268) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (7268) wifi: Wifi Spaces Left:11[0m
+[0;32mI (7268) wifi: Received 1400 bytes 0.1919, 00[0m
+[0;32mI (7268) wifi: Wifi Spaces Left:10[0m
+[0;32mI (7278) wifi: Received 1400 bytes 0.1930, edde[0m
+[0;32mI (7278) wifi: Wifi Spaces Left:9[0m
+[0;32mI (7278) wifi: Received 1400 bytes 0.1940, 00[0m
+[0;32mI (7288) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (7288) wifi: Wifi Spaces Left:9[0m
+[0;32mI (7298) wifi: Received 1400 bytes 0.1951, 00[0m
+[0;32mI (7298) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (7298) wifi: Wifi Spaces Left:9[0m
+[0;32mI (7308) wifi: Received 1400 bytes 0.1962, 00[0m
+[0;32mI (7308) wifi: Wifi Spaces Left:8[0m
+[0;32mI (7318) wifi: Received 1400 bytes 0.1972, 00[0m
+[0;32mI (7318) wifi: Wifi Spaces Left:7[0m
+[0;32mI (7318) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (7328) wifi: Received 1400 bytes 0.1983, 00[0m
+[0;32mI (7338) wifi: Wifi Spaces Left:7[0m
+[0;32mI (7348) wifi: Received 1400 bytes 0.1994, da50[0m
+[0;32mI (7348) wifi: Wifi Spaces Left:6[0m
+[0;32mI (7348) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (7348) wifi: Received 1400 bytes 0.2004, 00[0m
+[0;32mI (7358) wifi: Wifi Spaces Left:6[0m
+[0;32mI (7358) wifi: Received 1400 bytes 0.2015, 38d[0m
+[0;32mI (7368) wifi: Wifi Spaces Left:5[0m
+[0;32mI (7368) wifi: Received 1400 bytes 0.2026, 00[0m
+[0;32mI (7368) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (7378) wifi: Wifi Spaces Left:5[0m
+[0;32mI (7388) wifi: Received 1400 bytes 0.2036, 00[0m
+[0;32mI (7388) wifi: Wifi Spaces Left:4[0m
+[0;32mI (7388) wifi: Received 1400 bytes 0.2047, 00[0m
+[0;32mI (7398) wifi: Wifi Spaces Left:3[0m
+[0;32mI (7398) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (7398) wifi: Received 1400 bytes 0.2058, 00[0m
+[0;32mI (7408) wifi: Wifi Spaces Left:3[0m
+[0;32mI (7418) wifi: Received 1400 bytes 0.2068, 00[0m
+[0;32mI (7418) wifi: Wifi Spaces Left:2[0m
+[0;32mI (7428) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (7428) wifi: Received 1400 bytes 0.2079, eeee[0m
+[0;32mI (7438) wifi: Wifi Spaces Left:2[0m
+[0;32mI (7438) wifi: Received 1400 bytes 0.2090, 00[0m
+[0;32mI (7438) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7448) wifi: Received 1400 bytes 0.2100, eeee[0m
+[0;32mI (7448) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (7448) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7458) wifi: Received 1400 bytes 0.2111, 00[0m
+[0;32mI (7468) wifi: Wifi Spaces Left:0[0m
+[0;32mI (7468) wifi: Received 1400 bytes 0.2122, 01[0m
+[0;32mI (7478) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (7498) SPI: SPI  Spaces Left:2 ed92[0m
+[0;32mI (7508) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (7528) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (7548) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (7558) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (7578) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (7598) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (7608) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (7628) SPI: SPI  Spaces Left:10 edde[0m
+[0;32mI (7648) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (7658) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (7678) wifi: Wifi Spaces Left:11[0m
+[0;32mI (7678) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (7688) wifi: Received 1400 bytes 0.2132, 00[0m
+[0;32mI (7688) wifi: Wifi Spaces Left:11[0m
+[0;32mI (7698) wifi: Received 1400 bytes 0.2143, 00[0m
+[0;32mI (7698) wifi: Wifi Spaces Left:10[0m
+[0;32mI (7698) wifi: Received 1400 bytes 0.2153, 00[0m
+[0;32mI (7698) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (7698) wifi: Wifi Spaces Left:10[0m
+[0;32mI (7718) wifi: Received 1400 bytes 0.2164, 00[0m
+[0;32mI (7718) wifi: Wifi Spaces Left:9[0m
+[0;32mI (7718) wifi: Received 1400 bytes 0.2175, 00[0m
+[0;32mI (7728) wifi: Wifi Spaces Left:9[0m
+[0;32mI (7728) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (7728) wifi: Received 1400 bytes 0.2185, eeee[0m
+[0;32mI (7738) wifi: Wifi Spaces Left:8[0m
+[0;32mI (7738) wifi: Received 1400 bytes 0.2196, 00[0m
+[0;32mI (7748) wifi: Wifi Spaces Left:7[0m
+[0;32mI (7748) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (7748) wifi: Received 1400 bytes 0.2207, 07d[0m
+[0;32mI (7758) wifi: Wifi Spaces Left:7[0m
+[0;32mI (7768) wifi: Received 1400 bytes 0.2217, 00[0m
+[0;32mI (7768) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (7768) wifi: Wifi Spaces Left:7[0m
+[0;32mI (7778) wifi: Received 1400 bytes 0.2228, 00[0m
+[0;32mI (7778) wifi: Wifi Spaces Left:6[0m
+[0;32mI (7788) wifi: Received 1400 bytes 0.2239, 00[0m
+[0;32mI (7788) wifi: Wifi Spaces Left:5[0m
+[0;32mI (7788) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (7798) wifi: Received 1400 bytes 0.2249, 00[0m
+[0;32mI (7808) wifi: Wifi Spaces Left:5[0m
+[0;32mI (7818) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (7818) wifi: Received 1400 bytes 0.2260, 00[0m
+[0;32mI (7818) wifi: Wifi Spaces Left:5[0m
+[0;32mI (7828) wifi: Received 1400 bytes 0.2271, eeee[0m
+[0;32mI (7828) wifi: Wifi Spaces Left:4[0m
+[0;32mI (7838) wifi: Received 1400 bytes 0.2281, 00[0m
+[0;32mI (7838) wifi: Wifi Spaces Left:3[0m
+[0;32mI (7838) SPI: SPI  Spaces Left:4 dd92[0m
+[0;32mI (7848) wifi: Received 1400 bytes 0.2292, eeee[0m
+[0;32mI (7848) wifi: Wifi Spaces Left:3[0m
+[0;32mI (7848) wifi: Received 1400 bytes 0.2303, 00[0m
+[0;32mI (7858) wifi: Wifi Spaces Left:2[0m
+[0;32mI (7858) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (7858) wifi: Received 1400 bytes 0.2313, eeee[0m
+[0;32mI (7868) wifi: Wifi Spaces Left:2[0m
+[0;32mI (7878) wifi: Received 1400 bytes 0.2324, 00[0m
+[0;32mI (7878) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7878) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (7888) wifi: Received 1400 bytes 0.2335, eeee[0m
+[0;32mI (7898) wifi: Wifi Spaces Left:1[0m
+[0;32mI (7898) wifi: Received 1400 bytes 0.2345, 00[0m
+[0;32mI (7898) wifi: Wifi Spaces Left:0[0m
+[0;32mI (7908) SPI: SPI  Spaces Left:1 200[0m
+[0;32mI (7908) wifi: Received 1400 bytes 0.2356, eeee[0m
+[0;32mI (7918) wifi: Wifi Spaces Left:0[0m
+[0;32mI (7918) wifi: Received 1400 bytes 0.2367, 00[0m
+[0;32mI (7928) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (7948) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (7958) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (7978) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (7998) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (8018) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (8028) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (8048) SPI: SPI  Spaces Left:8 026[0m
+[0;32mI (8068) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (8088) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (8098) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (8118) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (8128) wifi: Wifi Spaces Left:11[0m
+[0;32mI (8138) wifi: Received 1400 bytes 0.2377, eeee[0m
+[0;32mI (8138) wifi: Wifi Spaces Left:10[0m
+[0;32mI (8138) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (8138) wifi: Received 1400 bytes 0.2388, 00[0m
+[0;32mI (8148) wifi: Wifi Spaces Left:10[0m
+[0;32mI (8158) wifi: Received 1400 bytes 0.2399, eeee[0m
+[0;32mI (8158) wifi: Wifi Spaces Left:9[0m
+[0;32mI (8158) SPI: SPI  Spaces Left:10 eedd[0m
+[0;32mI (8158) wifi: Received 1400 bytes 0.2409, e00[0m
+[0;32mI (8168) wifi: Wifi Spaces Left:9[0m
+[0;32mI (8178) wifi: Received 1400 bytes 0.2420, eeee[0m
+[0;32mI (8178) wifi: Wifi Spaces Left:8[0m
+[0;32mI (8178) wifi: Received 1400 bytes 0.2430, eeee[0m
+[0;32mI (8178) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (8188) wifi: Wifi Spaces Left:8[0m
+[0;32mI (8198) wifi: Received 1400 bytes 0.2441, 00[0m
+[0;32mI (8198) wifi: Wifi Spaces Left:7[0m
+[0;32mI (8208) wifi: Received 1400 bytes 0.2452, 00[0m
+[0;32mI (8208) wifi: Wifi Spaces Left:6[0m
+[0;32mI (8208) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (8218) wifi: Received 1400 bytes 0.2462, 00[0m
+[0;32mI (8218) wifi: Wifi Spaces Left:6[0m
+[0;32mI (8228) wifi: Received 1400 bytes 0.2473, 410[0m
+[0;32mI (8228) wifi: Wifi Spaces Left:5[0m
+[0;32mI (8238) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (8238) wifi: Received 1400 bytes 0.2484, 00[0m
+[0;32mI (8248) wifi: Wifi Spaces Left:5[0m
+[0;32mI (8248) wifi: Received 1400 bytes 0.2494, eeee[0m
+[0;32mI (8258) wifi: Wifi Spaces Left:4[0m
+[0;32mI (8258) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (8258) wifi: Received 1400 bytes 0.2505, 00[0m
+[0;32mI (8268) wifi: Wifi Spaces Left:4[0m
+[0;32mI (8278) wifi: Received 1400 bytes 0.2516, 00[0m
+[0;32mI (8278) wifi: Wifi Spaces Left:3[0m
+[0;32mI (8278) wifi: Received 1400 bytes 0.2526, 00[0m
+[0;32mI (8288) wifi: Wifi Spaces Left:2[0m
+[0;32mI (8288) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (8288) wifi: Received 1400 bytes 0.2537, 730[0m
+[0;32mI (8298) wifi: Wifi Spaces Left:2[0m
+[0;32mI (8308) wifi: Received 1400 bytes 0.2548, 00[0m
+[0;32mI (8308) wifi: Wifi Spaces Left:1[0m
+[0;32mI (8318) wifi: Received 1400 bytes 0.2558, eeee[0m
+[0;32mI (8318) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (8318) wifi: Wifi Spaces Left:1[0m
+[0;32mI (8328) wifi: Received 1400 bytes 0.2569, 00[0m
+[0;32mI (8328) wifi: Wifi Spaces Left:0[0m
+[0;32mI (8338) wifi: Received 1400 bytes 0.2580, edde[0m
+[0;32mI (8338) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (8358) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (8378) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (8398) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (8418) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (8428) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (8448) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (8468) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (8478) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (8498) SPI: SPI  Spaces Left:10 edde[0m
+[0;32mI (8518) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (8528) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (8538) wifi: Wifi Spaces Left:11[0m
+[0;32mI (8548) wifi: Received 1400 bytes 0.2590, 00[0m
+[0;32mI (8548) wifi: Wifi Spaces Left:10[0m
+[0;32mI (8548) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (8548) wifi: Received 1400 bytes 0.2601, 00[0m
+[0;32mI (8558) wifi: Wifi Spaces Left:10[0m
+[0;32mI (8568) wifi: Received 1400 bytes 0.2612, 00[0m
+[0;32mI (8568) wifi: Wifi Spaces Left:9[0m
+[0;32mI (8568) wifi: Received 1400 bytes 0.2622, 00[0m
+[0;32mI (8568) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (8578) wifi: Wifi Spaces Left:9[0m
+[0;32mI (8588) wifi: Received 1400 bytes 0.2633, 00[0m
+[0;32mI (8588) wifi: Wifi Spaces Left:8[0m
+[0;32mI (8588) wifi: Received 1400 bytes 0.2644, eeea[0m
+[0;32mI (8598) wifi: Wifi Spaces Left:7[0m
+[0;32mI (8598) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (8598) wifi: Received 1400 bytes 0.2654, 00[0m
+[0;32mI (8618) wifi: Wifi Spaces Left:7[0m
+[0;32mI (8618) SPI: SPI  Spaces Left:8 da50[0m
+[0;32mI (8628) wifi: Received 1400 bytes 0.2665, eeee[0m
+[0;32mI (8628) wifi: Wifi Spaces Left:7[0m
+[0;32mI (8638) wifi: Received 1400 bytes 0.2676, 00[0m
+[0;32mI (8638) wifi: Wifi Spaces Left:6[0m
+[0;32mI (8638) wifi: Received 1400 bytes 0.2686, 00[0m
+[0;32mI (8648) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (8648) wifi: Wifi Spaces Left:6[0m
+[0;32mI (8658) wifi: Received 1400 bytes 0.2697, 00[0m
+[0;32mI (8658) wifi: Wifi Spaces Left:5[0m
+[0;32mI (8658) wifi: Received 1400 bytes 0.2707, edde[0m
+[0;32mI (8668) SPI: SPI  Spaces Left:6 38d[0m
+[0;32mI (8668) wifi: Wifi Spaces Left:5[0m
+[0;32mI (8678) wifi: Received 1400 bytes 0.2718, 00[0m
+[0;32mI (8678) wifi: Wifi Spaces Left:4[0m
+[0;32mI (8688) wifi: Received 1400 bytes 0.2729, 00[0m
+[0;32mI (8688) wifi: Wifi Spaces Left:3[0m
+[0;32mI (8688) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (8698) wifi: Received 1400 bytes 0.2739, 00[0m
+[0;32mI (8698) wifi: Wifi Spaces Left:3[0m
+[0;32mI (8708) wifi: Received 1400 bytes 0.2750, 00[0m
+[0;32mI (8708) wifi: Wifi Spaces Left:2[0m
+[0;32mI (8718) wifi: Received 1400 bytes 0.2761, 00[0m
+[0;32mI (8718) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (8718) wifi: Wifi Spaces Left:2[0m
+[0;32mI (8728) wifi: Received 1400 bytes 0.2771, d710[0m
+[0;32mI (8738) wifi: Wifi Spaces Left:1[0m
+[0;32mI (8738) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (8748) wifi: Received 1400 bytes 0.2782, 00[0m
+[0;32mI (8748) wifi: Wifi Spaces Left:1[0m
+[0;32mI (8758) wifi: Received 1400 bytes 0.2793, eeee[0m
+[0;32mI (8758) wifi: Wifi Spaces Left:0[0m
+[0;32mI (8758) wifi: Received 1400 bytes 0.2803, 00[0m
+[0;32mI (8758) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (8768) wifi: Wifi Spaces Left:0[0m
+[0;32mI (8778) wifi: Received 1400 bytes 0.2814, eeee[0m
+[0;32mI (8788) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (8808) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (8818) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (8838) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (8858) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (8868) SPI: SPI  Spaces Left:6 01[0m
+[0;32mI (8888) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (8908) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (8928) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (8938) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (8958) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (8978) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (8978) wifi: Wifi Spaces Left:11[0m
+[0;32mI (8988) wifi: Received 1400 bytes 0.2825, 00[0m
+[0;32mI (8988) wifi: Wifi Spaces Left:10[0m
+[0;32mI (8988) wifi: Received 1400 bytes 0.2835, eeee[0m
+[0;32mI (8988) wifi: Wifi Spaces Left:9[0m
+[0;32mI (8988) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (8998) wifi: Received 1400 bytes 0.2846, 00[0m
+[0;32mI (9008) wifi: Wifi Spaces Left:9[0m
+[0;32mI (9008) wifi: Received 1400 bytes 0.2857, eeee[0m
+[0;32mI (9008) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9018) wifi: Received 1400 bytes 0.2867, 00[0m
+[0;32mI (9018) SPI: SPI  Spaces Left:9 07d[0m
+[0;32mI (9018) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9038) wifi: Received 1400 bytes 0.2878, 00[0m
+[0;32mI (9038) wifi: Wifi Spaces Left:7[0m
+[0;32mI (9038) wifi: Received 1400 bytes 0.2889, 00[0m
+[0;32mI (9048) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9048) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (9048) wifi: Received 1400 bytes 0.2899, ed72[0m
+[0;32mI (9058) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9058) wifi: Received 1400 bytes 0.2910, 00[0m
+[0;32mI (9068) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9068) wifi: Received 1400 bytes 0.2921, eeee[0m
+[0;32mI (9068) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (9078) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9088) wifi: Received 1400 bytes 0.2931, 00[0m
+[0;32mI (9088) wifi: Wifi Spaces Left:4[0m
+[0;32mI (9088) wifi: Received 1400 bytes 0.2942, eeed[0m
+[0;32mI (9098) wifi: Wifi Spaces Left:3[0m
+[0;32mI (9098) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (9098) wifi: Received 1400 bytes 0.2952, 00[0m
+[0;32mI (9108) wifi: Wifi Spaces Left:3[0m
+[0;32mI (9118) wifi: Received 1400 bytes 0.2963, eeee[0m
+[0;32mI (9118) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9128) wifi: Received 1400 bytes 0.2974, 00[0m
+[0;32mI (9128) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (9128) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9138) wifi: Received 1400 bytes 0.2984, eeee[0m
+[0;32mI (9138) wifi: Wifi Spaces Left:1[0m
+[0;32mI (9148) wifi: Received 1400 bytes 0.2995, 00[0m
+[0;32mI (9148) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (9148) wifi: Wifi Spaces Left:1[0m
+[0;32mI (9158) wifi: Received 1400 bytes 0.3006, eeee[0m
+[0;32mI (9168) wifi: Wifi Spaces Left:0[0m
+[0;32mI (9178) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (9178) wifi: Received 1000 bytes 0.3013, 00[0m
+[0;32mI (9178) wifi: Wifi Spaces Left:0[0m
+[0;32mI (9178) wifi: Received 1400 bytes 0.3024, 00[0m
+[0;32mI (9188) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (9208) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (9228) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (9248) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (9258) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (9278) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (9298) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (9308) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (9328) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (9348) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (9358) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (9378) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (9388) wifi: Wifi Spaces Left:11[0m
+[0;32mI (9398) wifi: Received 1400 bytes 0.3035, eeed[0m
+[0;32mI (9398) wifi: Wifi Spaces Left:10[0m
+[0;32mI (9398) wifi: Received 1400 bytes 0.3045, 00[0m
+[0;32mI (9398) SPI: SPI  Spaces Left:11 e00[0m
+[0;32mI (9398) wifi: Wifi Spaces Left:10[0m
+[0;32mI (9408) wifi: Received 1400 bytes 0.3056, 01[0m
+[0;32mI (9408) wifi: Wifi Spaces Left:9[0m
+[0;32mI (9418) wifi: Received 1400 bytes 0.3067, 00[0m
+[0;32mI (9418) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9428) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (9428) wifi: Received 200 bytes 0.3068, 00[0m
+[0;32mI (9438) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9438) wifi: Received 1400 bytes 0.3079, 00[0m
+[0;32mI (9448) wifi: Wifi Spaces Left:7[0m
+[0;32mI (9448) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (9458) wifi: Received 1400 bytes 0.3089, 00[0m
+[0;32mI (9458) wifi: Wifi Spaces Left:7[0m
+[0;32mI (9468) wifi: Received 80 bytes 0.3090, 00[0m
+[0;32mI (9468) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9478) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (9478) wifi: Received 1400 bytes 0.3101, 00[0m
+[0;32mI (9478) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9488) wifi: Received 1400 bytes 0.3111, 02[0m
+[0;32mI (9488) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9498) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (9498) wifi: Received 1400 bytes 0.3122, 00[0m
+[0;32mI (9498) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9508) wifi: Received 1400 bytes 0.3133, 00[0m
+[0;32mI (9508) wifi: Wifi Spaces Left:4[0m
+[0;32mI (9518) wifi: Received 1400 bytes 0.3143, 00[0m
+[0;32mI (9518) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (9518) wifi: Wifi Spaces Left:4[0m
+[0;32mI (9538) wifi: Received 1400 bytes 0.3154, 00[0m
+[0;32mI (9538) wifi: Wifi Spaces Left:3[0m
+[0;32mI (9538) wifi: Received 1400 bytes 0.3165, 00[0m
+[0;32mI (9538) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9538) SPI: SPI  Spaces Left:3 410[0m
+[0;32mI (9548) wifi: Received 1400 bytes 0.3175, 00[0m
+[0;32mI (9558) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9568) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (9568) wifi: Received 1400 bytes 0.3186, 00[0m
+[0;32mI (9568) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9568) wifi: Received 1400 bytes 0.3197, ec81[0m
+[0;32mI (9578) wifi: Wifi Spaces Left:1[0m
+[0;32mI (9588) wifi: Received 1400 bytes 0.3207, 00[0m
+[0;32mI (9588) wifi: Wifi Spaces Left:0[0m
+[0;32mI (9588) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (9588) wifi: Received 1400 bytes 0.3218, 18ee[0m
+[0;32mI (9598) wifi: Wifi Spaces Left:0[0m
+[0;32mI (9608) wifi: Received 1400 bytes 0.3229, 00[0m
+[0;32mI (9618) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (9628) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (9648) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (9668) SPI: SPI  Spaces Left:4 730[0m
+[0;32mI (9678) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (9698) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (9718) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (9728) SPI: SPI  Spaces Left:8 edde[0m
+[0;32mI (9748) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (9768) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (9778) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (9798) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (9808) wifi: Wifi Spaces Left:11[0m
+[0;32mI (9818) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (9818) wifi: Received 1400 bytes 0.3239, 00[0m
+[0;32mI (9818) wifi: Wifi Spaces Left:11[0m
+[0;32mI (9828) wifi: Received 1400 bytes 0.3250, 00[0m
+[0;32mI (9828) wifi: Wifi Spaces Left:10[0m
+[0;32mI (9828) wifi: Received 1400 bytes 0.3261, 00[0m
+[0;32mI (9828) wifi: Wifi Spaces Left:9[0m
+[0;32mI (9838) SPI: SPI  Spaces Left:10 eeea[0m
+[0;32mI (9838) wifi: Received 1400 bytes 0.3271, 00[0m
+[0;32mI (9848) wifi: Wifi Spaces Left:9[0m
+[0;32mI (9858) wifi: Received 1400 bytes 0.3282, dddd[0m
+[0;32mI (9858) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9858) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (9868) wifi: Received 1400 bytes 0.3292, 00[0m
+[0;32mI (9868) wifi: Wifi Spaces Left:8[0m
+[0;32mI (9878) wifi: Received 1400 bytes 0.3303, 00[0m
+[0;32mI (9878) wifi: Wifi Spaces Left:7[0m
+[0;32mI (9878) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (9878) wifi: Received 800 bytes 0.3309, 00[0m
+[0;32mI (9888) wifi: Wifi Spaces Left:7[0m
+[0;32mI (9898) wifi: Received 1400 bytes 0.3320, 00[0m
+[0;32mI (9898) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9908) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (9908) wifi: Received 1400 bytes 0.3331, 00[0m
+[0;32mI (9918) wifi: Wifi Spaces Left:6[0m
+[0;32mI (9918) wifi: Received 1400 bytes 0.3341, 00[0m
+[0;32mI (9918) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9928) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (9928) wifi: Received 1400 bytes 0.3352, 00[0m
+[0;32mI (9938) wifi: Wifi Spaces Left:5[0m
+[0;32mI (9938) wifi: Received 1400 bytes 0.3362, eeee[0m
+[0;32mI (9948) wifi: Wifi Spaces Left:4[0m
+[0;32mI (9948) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (9948) wifi: Received 1400 bytes 0.3373, 00[0m
+[0;32mI (9958) wifi: Wifi Spaces Left:4[0m
+[0;32mI (9968) wifi: Received 1400 bytes 0.3384, eeed[0m
+[0;32mI (9968) wifi: Wifi Spaces Left:3[0m
+[0;32mI (9978) SPI: SPI  Spaces Left:4 edde[0m
+[0;32mI (9978) wifi: Received 1400 bytes 0.3394, 00[0m
+[0;32mI (9978) wifi: Wifi Spaces Left:3[0m
+[0;32mI (9988) wifi: Received 1400 bytes 0.3405, 00[0m
+[0;32mI (9988) wifi: Wifi Spaces Left:2[0m
+[0;32mI (9998) wifi: Received 1400 bytes 0.3416, 00[0m
+[0;32mI (9998) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (9998) wifi: Wifi Spaces Left:2[0m
+[0;32mI (10008) wifi: Received 1400 bytes 0.3426, edde[0m
+[0;32mI (10008) wifi: Wifi Spaces Left:1[0m
+[0;32mI (10018) wifi: Received 1400 bytes 0.3437, 00[0m
+[0;32mI (10018) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10018) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (10028) wifi: Received 1400 bytes 0.3448, 01[0m
+[0;32mI (10038) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10038) wifi: Received 1400 bytes 0.3458, 00[0m
+[0;32mI (10048) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (10068) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (10078) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (10098) SPI: SPI  Spaces Left:4 d710[0m
+[0;32mI (10118) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (10138) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (10158) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (10168) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (10188) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (10208) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (10218) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (10238) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (10248) wifi: Wifi Spaces Left:11[0m
+[0;32mI (10248) wifi: Received 1400 bytes 0.3469, d930[0m
+[0;32mI (10248) wifi: Wifi Spaces Left:10[0m
+[0;32mI (10258) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (10258) wifi: Received 1400 bytes 0.3480, 00[0m
+[0;32mI (10258) wifi: Wifi Spaces Left:10[0m
+[0;32mI (10268) wifi: Received 1400 bytes 0.3490, eeee[0m
+[0;32mI (10268) wifi: Wifi Spaces Left:9[0m
+[0;32mI (10278) wifi: Received 1400 bytes 0.3501, 00[0m
+[0;32mI (10278) wifi: Wifi Spaces Left:9[0m
+[0;32mI (10278) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (10288) wifi: Received 1400 bytes 0.3512, 02[0m
+[0;32mI (10288) wifi: Wifi Spaces Left:8[0m
+[0;32mI (10298) wifi: Received 1400 bytes 0.3522, 00[0m
+[0;32mI (10298) wifi: Wifi Spaces Left:7[0m
+[0;32mI (10308) wifi: Received 1400 bytes 0.3533, 00[0m
+[0;32mI (10308) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (10308) wifi: Wifi Spaces Left:7[0m
+[0;32mI (10328) wifi: Received 1400 bytes 0.3544, 00[0m
+[0;32mI (10328) wifi: Wifi Spaces Left:6[0m
+[0;32mI (10328) wifi: Received 1400 bytes 0.3554, eeee[0m
+[0;32mI (10338) SPI: SPI  Spaces Left:7 ed72[0m
+[0;32mI (10338) wifi: Wifi Spaces Left:6[0m
+[0;32mI (10348) wifi: Received 1400 bytes 0.3565, 00[0m
+[0;32mI (10348) wifi: Wifi Spaces Left:5[0m
+[0;32mI (10348) wifi: Received 1400 bytes 0.3576, eedd[0m
+[0;32mI (10358) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (10358) wifi: Wifi Spaces Left:5[0m
+[0;32mI (10378) wifi: Received 1400 bytes 0.3586, 00[0m
+[0;32mI (10378) wifi: Wifi Spaces Left:4[0m
+[0;32mI (10378) wifi: Received 1400 bytes 0.3597, eeee[0m
+[0;32mI (10378) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (10378) wifi: Wifi Spaces Left:4[0m
+[0;32mI (10398) wifi: Received 1400 bytes 0.3608, 00[0m
+[0;32mI (10398) wifi: Wifi Spaces Left:3[0m
+[0;32mI (10398) wifi: Received 1400 bytes 0.3618, eeee[0m
+[0;32mI (10398) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (10398) wifi: Wifi Spaces Left:3[0m
+[0;32mI (10418) wifi: Received 1400 bytes 0.3629, 00[0m
+[0;32mI (10418) wifi: Wifi Spaces Left:2[0m
+[0;32mI (10418) wifi: Received 1400 bytes 0.3639, eeee[0m
+[0;32mI (10428) SPI: SPI  Spaces Left:3 eeed[0m
+[0;32mI (10428) wifi: Wifi Spaces Left:2[0m
+[0;32mI (10438) wifi: Received 1400 bytes 0.3650, 00[0m
+[0;32mI (10438) wifi: Wifi Spaces Left:1[0m
+[0;32mI (10448) wifi: Received 1400 bytes 0.3661, dddd[0m
+[0;32mI (10448) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10448) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (10458) wifi: Received 1400 bytes 0.3671, 00[0m
+[0;32mI (10458) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10468) wifi: Received 1400 bytes 0.3682, 99aa[0m
+[0;32mI (10478) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (10498) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (10518) SPI: SPI  Spaces Left:3 eeee[0m
+[0;32mI (10528) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (10548) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (10568) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (10578) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (10598) SPI: SPI  Spaces Left:8 eeed[0m
+[0;32mI (10608) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (10628) SPI: SPI  Spaces Left:10 01[0m
+[0;32mI (10648) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (10668) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (10668) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (10668) wifi: Wifi Spaces Left:12[0m
+[0;32mI (10678) wifi: Received 1400 bytes 0.3693, 00[0m
+[0;32mI (10678) wifi: Wifi Spaces Left:11[0m
+[0;32mI (10678) wifi: Received 1400 bytes 0.3703, 00[0m
+[0;32mI (10678) wifi: Wifi Spaces Left:10[0m
+[0;32mI (10688) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (10688) wifi: Received 1400 bytes 0.3714, 00[0m
+[0;32mI (10698) wifi: Wifi Spaces Left:10[0m
+[0;32mI (10708) wifi: Received 144 bytes 0.3715, 810[0m
+[0;32mI (10708) wifi: Wifi Spaces Left:9[0m
+[0;32mI (10708) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (10708) wifi: Received 1400 bytes 0.3726, 110[0m
+[0;32mI (10718) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (10718) wifi: Wifi Spaces Left:10[0m
+[0;32mI (10728) wifi: Received 1400 bytes 0.3736, 00[0m
+[0;32mI (10728) wifi: Wifi Spaces Left:9[0m
+[0;32mI (10738) wifi: Received 1400 bytes 0.3747, 00[0m
+[0;32mI (10738) SPI: SPI  Spaces Left:10 02[0m
+[0;32mI (10738) wifi: Wifi Spaces Left:9[0m
+[0;32mI (10748) wifi: Received 1400 bytes 0.3758, 00[0m
+[0;32mI (10758) wifi: Wifi Spaces Left:8[0m
+[0;32mI (10758) wifi: Received 1400 bytes 0.3768, 00[0m
+[0;32mI (10768) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (10768) wifi: Wifi Spaces Left:8[0m
+[0;32mI (10768) wifi: Received 1400 bytes 0.3779, 00[0m
+[0;32mI (10778) wifi: Wifi Spaces Left:7[0m
+[0;32mI (10788) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (10788) wifi: Received 1400 bytes 0.3790, 00[0m
+[0;32mI (10788) wifi: Wifi Spaces Left:7[0m
+[0;32mI (10798) wifi: Received 1400 bytes 0.3800, 00[0m
+[0;32mI (10798) wifi: Wifi Spaces Left:6[0m
+[0;32mI (10808) wifi: Received 256 bytes 0.3802, 00[0m
+[0;32mI (10808) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (10808) wifi: Wifi Spaces Left:6[0m
+[0;32mI (10818) wifi: Received 1400 bytes 0.3813, 00[0m
+[0;32mI (10818) wifi: Wifi Spaces Left:5[0m
+[0;32mI (10828) wifi: Received 1400 bytes 0.3824, ed71[0m
+[0;32mI (10828) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (10828) wifi: Wifi Spaces Left:5[0m
+[0;32mI (10848) wifi: Received 1400 bytes 0.3834, 00[0m
+[0;32mI (10848) wifi: Wifi Spaces Left:4[0m
+[0;32mI (10858) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (10858) wifi: Received 1400 bytes 0.3845, 03[0m
+[0;32mI (10858) wifi: Wifi Spaces Left:4[0m
+[0;32mI (10858) wifi: Received 1400 bytes 0.3856, 00[0m
+[0;32mI (10868) wifi: Wifi Spaces Left:3[0m
+[0;32mI (10868) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (10878) wifi: Received 1400 bytes 0.3866, 924[0m
+[0;32mI (10878) wifi: Wifi Spaces Left:3[0m
+[0;32mI (10888) wifi: Received 1400 bytes 0.3877, 00[0m
+[0;32mI (10888) wifi: Wifi Spaces Left:2[0m
+[0;32mI (10898) wifi: Received 1400 bytes 0.3888, 2bfe[0m
+[0;32mI (10898) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (10898) wifi: Wifi Spaces Left:2[0m
+[0;32mI (10908) wifi: Received 1400 bytes 0.3898, 00[0m
+[0;32mI (10908) wifi: Wifi Spaces Left:1[0m
+[0;32mI (10918) wifi: Received 1400 bytes 0.3909, 999a[0m
+[0;32mI (10918) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10928) SPI: SPI  Spaces Left:1 ec81[0m
+[0;32mI (10928) wifi: Received 1400 bytes 0.3920, 00[0m
+[0;32mI (10938) wifi: Wifi Spaces Left:0[0m
+[0;32mI (10948) wifi: Received 1400 bytes 0.3930, dedd[0m
+[0;32mI (10948) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (10968) SPI: SPI  Spaces Left:2 18ee[0m
+[0;32mI (10988) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (10998) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (11018) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (11038) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (11048) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (11068) SPI: SPI  Spaces Left:8 dddd[0m
+[0;32mI (11088) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (11098) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (11118) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (11128) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (11148) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (11148) wifi: Wifi Spaces Left:12[0m
+[0;32mI (11158) wifi: Received 1400 bytes 0.3941, 00[0m
+[0;32mI (11158) wifi: Wifi Spaces Left:11[0m
+[0;32mI (11168) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (11168) wifi: Received 1400 bytes 0.3951, eeee[0m
+[0;32mI (11168) wifi: Wifi Spaces Left:11[0m
+[0;32mI (11168) wifi: Received 1400 bytes 0.3962, 00[0m
+[0;32mI (11178) wifi: Wifi Spaces Left:10[0m
+[0;32mI (11178) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (11188) wifi: Received 1400 bytes 0.3973, eeee[0m
+[0;32mI (11188) wifi: Wifi Spaces Left:10[0m
+[0;32mI (11198) wifi: Received 1400 bytes 0.3983, 00[0m
+[0;32mI (11198) wifi: Wifi Spaces Left:9[0m
+[0;32mI (11198) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (11208) wifi: Received 1400 bytes 0.3994, eeee[0m
+[0;32mI (11208) wifi: Wifi Spaces Left:9[0m
+[0;32mI (11218) wifi: Received 1400 bytes 0.4005, 00[0m
+[0;32mI (11218) wifi: Wifi Spaces Left:8[0m
+[0;32mI (11228) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (11228) wifi: Received 1400 bytes 0.4015, eeee[0m
+[0;32mI (11238) wifi: Wifi Spaces Left:8[0m
+[0;32mI (11238) wifi: Received 1400 bytes 0.4026, 00[0m
+[0;32mI (11248) wifi: Wifi Spaces Left:7[0m
+[0;32mI (11248) SPI: SPI  Spaces Left:8 eeed[0m
+[0;32mI (11248) wifi: Received 1400 bytes 0.4037, eeee[0m
+[0;32mI (11268) wifi: Wifi Spaces Left:7[0m
+[0;32mI (11268) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (11278) wifi: Received 1400 bytes 0.4047, e00[0m
+[0;32mI (11278) wifi: Wifi Spaces Left:7[0m
+[0;32mI (11288) wifi: Received 1400 bytes 0.4058, eeee[0m
+[0;32mI (11288) wifi: Wifi Spaces Left:6[0m
+[0;32mI (11288) wifi: Received 1400 bytes 0.4069, 00[0m
+[0;32mI (11288) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (11298) wifi: Wifi Spaces Left:6[0m
+[0;32mI (11308) wifi: Received 1400 bytes 0.4079, 00[0m
+[0;32mI (11308) wifi: Wifi Spaces Left:5[0m
+[0;32mI (11308) wifi: Received 1400 bytes 0.4090, 00[0m
+[0;32mI (11318) wifi: Wifi Spaces Left:4[0m
+[0;32mI (11318) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (11318) wifi: Received 1400 bytes 0.4101, 00[0m
+[0;32mI (11328) wifi: Wifi Spaces Left:4[0m
+[0;32mI (11338) wifi: Received 1400 bytes 0.4111, 00[0m
+[0;32mI (11338) wifi: Wifi Spaces Left:3[0m
+[0;32mI (11348) wifi: Received 1400 bytes 0.4122, 00[0m
+[0;32mI (11348) SPI: SPI  Spaces Left:4 edde[0m
+[0;32mI (11348) wifi: Wifi Spaces Left:3[0m
+[0;32mI (11358) wifi: Received 1400 bytes 0.4133, 00[0m
+[0;32mI (11358) wifi: Wifi Spaces Left:2[0m
+[0;32mI (11368) wifi: Received 1400 bytes 0.4143, 00[0m
+[0;32mI (11368) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (11368) wifi: Wifi Spaces Left:2[0m
+[0;32mI (11378) wifi: Received 1400 bytes 0.4154, 00[0m
+[0;32mI (11388) wifi: Wifi Spaces Left:1[0m
+[0;32mI (11388) wifi: Received 1400 bytes 0.4165, 00[0m
+[0;32mI (11398) wifi: Wifi Spaces Left:0[0m
+[0;32mI (11398) SPI: SPI  Spaces Left:1 01[0m
+[0;32mI (11398) wifi: Received 1400 bytes 0.4175, 00[0m
+[0;32mI (11408) wifi: Wifi Spaces Left:0[0m
+[0;32mI (11408) wifi: Received 1400 bytes 0.4186, 00[0m
+[0;32mI (11418) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (11438) SPI: SPI  Spaces Left:2 d930[0m
+[0;32mI (11458) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (11478) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (11488) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (11508) SPI: SPI  Spaces Left:6 02[0m
+[0;32mI (11528) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (11538) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (11558) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (11578) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (11598) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (11618) SPI: SPI  Spaces Left:12 eedd[0m
+[0;32mI (11618) wifi: Wifi Spaces Left:11[0m
+[0;32mI (11618) wifi: Received 1400 bytes 0.4196, 00[0m
+[0;32mI (11618) wifi: Wifi Spaces Left:10[0m
+[0;32mI (11628) wifi: Received 1400 bytes 0.4207, 00[0m
+[0;32mI (11628) wifi: Wifi Spaces Left:9[0m
+[0;32mI (11628) wifi: Received 1400 bytes 0.4218, 00[0m
+[0;32mI (11638) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (11638) wifi: Wifi Spaces Left:9[0m
+[0;32mI (11648) wifi: Received 1400 bytes 0.4228, 00[0m
+[0;32mI (11648) wifi: Wifi Spaces Left:8[0m
+[0;32mI (11658) wifi: Received 1400 bytes 0.4239, 00[0m
+[0;32mI (11658) wifi: Wifi Spaces Left:7[0m
+[0;32mI (11658) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (11668) wifi: Received 1400 bytes 0.4250, 00[0m
+[0;32mI (11678) wifi: Wifi Spaces Left:7[0m
+[0;32mI (11678) wifi: Received 1400 bytes 0.4260, 00[0m
+[0;32mI (11678) wifi: Wifi Spaces Left:6[0m
+[0;32mI (11688) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (11688) wifi: Received 1400 bytes 0.4271, 00[0m
+[0;32mI (11698) wifi: Wifi Spaces Left:6[0m
+[0;32mI (11698) wifi: Received 1400 bytes 0.4282, 7888[0m
+[0;32mI (11708) wifi: Wifi Spaces Left:5[0m
+[0;32mI (11708) wifi: Received 1400 bytes 0.4292, 00[0m
+[0;32mI (11708) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (11718) wifi: Wifi Spaces Left:5[0m
+[0;32mI (11728) wifi: Received 1400 bytes 0.4303, eeed[0m
+[0;32mI (11728) wifi: Wifi Spaces Left:4[0m
+[0;32mI (11738) wifi: Received 440 bytes 0.4306, 00[0m
+[0;32mI (11738) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (11738) wifi: Wifi Spaces Left:4[0m
+[0;32mI (11758) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (11758) wifi: Received 1400 bytes 0.4317, 00[0m
+[0;32mI (11768) wifi: Wifi Spaces Left:4[0m
+[0;32mI (11768) wifi: Received 1400 bytes 0.4328, 00[0m
+[0;32mI (11768) wifi: Wifi Spaces Left:3[0m
+[0;32mI (11768) wifi: Received 1400 bytes 0.4338, 00[0m
+[0;32mI (11778) wifi: Wifi Spaces Left:2[0m
+[0;32mI (11778) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (11778) wifi: Received 120 bytes 0.4339, 00[0m
+[0;32mI (11788) wifi: Wifi Spaces Left:2[0m
+[0;32mI (11798) wifi: Received 1400 bytes 0.4350, 00[0m
+[0;32mI (11798) wifi: Wifi Spaces Left:1[0m
+[0;32mI (11798) SPI: SPI  Spaces Left:2 dddd[0m
+[0;32mI (11808) wifi: Received 1400 bytes 0.4361, 00[0m
+[0;32mI (11808) wifi: Wifi Spaces Left:1[0m
+[0;32mI (11818) wifi: Received 1400 bytes 0.4371, 00[0m
+[0;32mI (11818) wifi: Wifi Spaces Left:0[0m
+[0;32mI (11828) wifi: Received 1400 bytes 0.4382, 00[0m
+[0;32mI (11828) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (11828) wifi: Wifi Spaces Left:0[0m
+[0;32mI (11838) wifi: Received 1400 bytes 0.4393, 00[0m
+[0;32mI (11858) SPI: SPI  Spaces Left:1 99aa[0m
+[0;32mI (11868) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (11888) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (11908) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (11928) SPI: SPI  Spaces Left:5 810[0m
+[0;32mI (11928) SPI: SPI  Spaces Left:6 110[0m
+[0;32mI (11938) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (11958) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (11978) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (11998) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (12008) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (12028) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (12048) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (12048) wifi: Wifi Spaces Left:12[0m
+[0;32mI (12058) wifi: Received 1400 bytes 0.4403, 3234[0m
+[0;32mI (12058) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12058) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (12068) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (12068) wifi: Received 1400 bytes 0.4414, 00[0m
+[0;32mI (12068) wifi: Wifi Spaces Left:12[0m
+[0;32mI (12078) wifi: Received 280 bytes 0.4416, 00[0m
+[0;32mI (12078) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12088) wifi: Received 1400 bytes 0.4427, 00[0m
+[0;32mI (12088) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12088) SPI: SPI  Spaces Left:12 ed71[0m
+[0;32mI (12098) wifi: Received 1400 bytes 0.4437, 00[0m
+[0;32mI (12108) wifi: Wifi Spaces Left:10[0m
+[0;32mI (12108) wifi: Received 1400 bytes 0.4448, 00[0m
+[0;32mI (12108) wifi: Wifi Spaces Left:9[0m
+[0;32mI (12118) wifi: Received 1400 bytes 0.4459, 8997[0m
+[0;32mI (12118) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (12118) wifi: Wifi Spaces Left:9[0m
+[0;32mI (12128) wifi: Received 1400 bytes 0.4469, 00[0m
+[0;32mI (12138) wifi: Wifi Spaces Left:8[0m
+[0;32mI (12138) wifi: Received 200 bytes 0.4471, 9a97[0m
+[0;32mI (12148) wifi: Wifi Spaces Left:7[0m
+[0;32mI (12148) SPI: SPI  Spaces Left:8 03[0m
+[0;32mI (12148) wifi: Received 1400 bytes 0.4481, 6895[0m
+[0;32mI (12158) wifi: Wifi Spaces Left:7[0m
+[0;32mI (12118) Main: Manage Tasks Idle[0m
+[0;32mI (12168) wifi: Received 1400 bytes 0.4492, 00[0m
+[0;32mI (12168) wifi: Wifi Spaces Left:6[0m
+[0;32mI (12178) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (12178) wifi: Received 1400 bytes 0.4503, 5432[0m
+[0;32mI (12188) wifi: Wifi Spaces Left:6[0m
+[0;32mI (12188) wifi: Received 1400 bytes 0.4513, 00[0m
+[0;32mI (12198) wifi: Wifi Spaces Left:5[0m
+[0;32mI (12198) SPI: SPI  Spaces Left:6 924[0m
+[0;32mI (12198) wifi: Received 1400 bytes 0.4524, 6545[0m
+[0;32mI (12208) wifi: Wifi Spaces Left:5[0m
+[0;32mI (12208) wifi: Received 1400 bytes 0.4535, 00[0m
+[0;32mI (12218) wifi: Wifi Spaces Left:4[0m
+[0;32mI (12218) wifi: Received 1400 bytes 0.4545, 6678[0m
+[0;32mI (12218) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (12228) wifi: Wifi Spaces Left:4[0m
+[0;32mI (12238) wifi: Received 1400 bytes 0.4556, 00[0m
+[0;32mI (12238) wifi: Wifi Spaces Left:3[0m
+[0;32mI (12248) wifi: Received 1400 bytes 0.4567, 4567[0m
+[0;32mI (12248) wifi: Wifi Spaces Left:2[0m
+[0;32mI (12248) SPI: SPI  Spaces Left:3 2bfe[0m
+[0;32mI (12258) wifi: Received 1400 bytes 0.4577, 00[0m
+[0;32mI (12268) wifi: Wifi Spaces Left:2[0m
+[0;32mI (12268) wifi: Received 1400 bytes 0.4588, 7568[0m
+[0;32mI (12268) wifi: Wifi Spaces Left:1[0m
+[0;32mI (12278) wifi: Received 1400 bytes 0.4599, 00[0m
+[0;32mI (12278) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (12278) wifi: Wifi Spaces Left:1[0m
+[0;32mI (12288) wifi: Received 1400 bytes 0.4609, 8aa7[0m
+[0;32mI (12298) wifi: Wifi Spaces Left:0[0m
+[0;32mI (12308) SPI: SPI  Spaces Left:1 999a[0m
+[0;32mI (12308) wifi: Received 1400 bytes 0.4620, 00[0m
+[0;32mI (12308) wifi: Wifi Spaces Left:0[0m
+[0;32mI (12318) wifi: Received 1400 bytes 0.4631, 036[0m
+[0;32mI (12318) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (12338) SPI: SPI  Spaces Left:2 dedd[0m
+[0;32mI (12358) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (12378) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (12388) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (12408) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (12428) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (12438) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (12458) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (12478) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (12488) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (12508) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (12518) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12518) wifi: Received 1400 bytes 0.4641, 00[0m
+[0;32mI (12528) wifi: Wifi Spaces Left:10[0m
+[0;32mI (12528) wifi: Received 1400 bytes 0.4652, 8666[0m
+[0;32mI (12528) SPI: SPI  Spaces Left:11 e00[0m
+[0;32mI (12528) wifi: Wifi Spaces Left:10[0m
+[0;32mI (12538) wifi: Received 1400 bytes 0.4663, 00[0m
+[0;32mI (12538) wifi: Wifi Spaces Left:9[0m
+[0;32mI (12548) wifi: Received 1400 bytes 0.4673, 9999[0m
+[0;32mI (12548) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (12548) wifi: Wifi Spaces Left:9[0m
+[0;32mI (12568) wifi: Received 1400 bytes 0.4684, 00[0m
+[0;32mI (12568) wifi: Wifi Spaces Left:8[0m
+[0;32mI (12568) wifi: Received 1400 bytes 0.4694, 9976[0m
+[0;32mI (12578) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (12578) wifi: Wifi Spaces Left:8[0m
+[0;32mI (12588) wifi: Received 1400 bytes 0.4705, 00[0m
+[0;32mI (12588) wifi: Wifi Spaces Left:7[0m
+[0;32mI (12588) wifi: Received 1400 bytes 0.4716, 1110[0m
+[0;32mI (12598) wifi: Wifi Spaces Left:6[0m
+[0;32mI (12598) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (12598) wifi: Received 1400 bytes 0.4726, 00[0m
+[0;32mI (12608) wifi: Wifi Spaces Left:6[0m
+[0;32mI (12618) wifi: Received 1400 bytes 0.4737, 1121[0m
+[0;32mI (12618) wifi: Wifi Spaces Left:5[0m
+[0;32mI (12618) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (12628) wifi: Received 1400 bytes 0.4748, 00[0m
+[0;32mI (12638) wifi: Wifi Spaces Left:5[0m
+[0;32mI (12648) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (12648) wifi: Received 1400 bytes 0.4758, 9bbb[0m
+[0;32mI (12648) wifi: Wifi Spaces Left:5[0m
+[0;32mI (12648) wifi: Received 1080 bytes 0.4767, 00[0m
+[0;32mI (12658) wifi: Wifi Spaces Left:4[0m
+[0;32mI (12658) wifi: Received 1400 bytes 0.4777, 00[0m
+[0;32mI (12668) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (12668) wifi: Wifi Spaces Left:4[0m
+[0;32mI (12678) wifi: Received 1400 bytes 0.4788, 1220[0m
+[0;32mI (12678) wifi: Wifi Spaces Left:3[0m
+[0;32mI (12688) wifi: Received 80 bytes 0.4789, 00[0m
+[0;32mI (12688) wifi: Wifi Spaces Left:2[0m
+[0;32mI (12688) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (12698) wifi: Received 1400 bytes 0.4799, dede[0m
+[0;32mI (12698) wifi: Wifi Spaces Left:2[0m
+[0;32mI (12708) wifi: Received 1400 bytes 0.4810, 00[0m
+[0;32mI (12708) wifi: Wifi Spaces Left:1[0m
+[0;32mI (12718) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (12718) wifi: Received 1400 bytes 0.4820, 657c[0m
+[0;32mI (12728) wifi: Wifi Spaces Left:1[0m
+[0;32mI (12728) wifi: Received 1400 bytes 0.4831, 00[0m
+[0;32mI (12738) wifi: Wifi Spaces Left:0[0m
+[0;32mI (12738) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (12738) wifi: Received 1400 bytes 0.4842, dddd[0m
+[0;32mI (12748) wifi: Wifi Spaces Left:0[0m
+[0;32mI (12748) wifi: Received 1400 bytes 0.4852, 00[0m
+[0;32mI (12758) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (12778) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (12798) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (12808) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (12828) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (12848) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (12858) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (12878) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (12898) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (12908) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (12928) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (12948) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (12958) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12968) SPI: SPI  Spaces Left:12 7888[0m
+[0;32mI (12968) wifi: Received 1400 bytes 0.4863, edee[0m
+[0;32mI (12968) wifi: Wifi Spaces Left:11[0m
+[0;32mI (12968) wifi: Received 1400 bytes 0.4874, 00[0m
+[0;32mI (12978) wifi: Wifi Spaces Left:10[0m
+[0;32mI (12978) wifi: Received 1400 bytes 0.4884, 4d7[0m
+[0;32mI (12978) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (12988) wifi: Wifi Spaces Left:10[0m
+[0;32mI (12988) wifi: Received 1400 bytes 0.4895, 00[0m
+[0;32mI (12998) wifi: Wifi Spaces Left:9[0m
+[0;32mI (13008) wifi: Received 1400 bytes 0.4906, eddd[0m
+[0;32mI (13008) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13008) SPI: SPI  Spaces Left:9 eeed[0m
+[0;32mI (13008) wifi: Received 1400 bytes 0.4916, 00[0m
+[0;32mI (13018) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13028) wifi: Received 1400 bytes 0.4927, eeed[0m
+[0;32mI (13028) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13038) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (13038) wifi: Received 1400 bytes 0.4938, e00[0m
+[0;32mI (13048) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13048) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (13058) wifi: Received 1400 bytes 0.4948, eeee[0m
+[0;32mI (13058) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13068) wifi: Received 1400 bytes 0.4959, c743[0m
+[0;32mI (13068) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13068) wifi: Received 1400 bytes 0.4970, 00[0m
+[0;32mI (13078) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (13078) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13088) wifi: Received 1400 bytes 0.4980, 00[0m
+[0;32mI (13088) wifi: Wifi Spaces Left:5[0m
+[0;32mI (13098) wifi: Received 720 bytes 0.4986, 00[0m
+[0;32mI (13098) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13098) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (13128) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (13128) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (13148) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (13158) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (13178) wifi: Received 1400 bytes 0.4996, 00[0m
+[0;32mI (13178) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13178) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (13188) wifi: Received 1400 bytes 0.5007, aaa9[0m
+[0;32mI (13188) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13188) wifi: Received 1400 bytes 0.5018, 00[0m
+[0;32mI (13198) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13198) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (13208) wifi: Received 1400 bytes 0.5028, cbbc[0m
+[0;32mI (13208) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13218) wifi: Received 1400 bytes 0.5039, 00[0m
+[0;32mI (13218) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13218) SPI: SPI  Spaces Left:7 3234[0m
+[0;32mI (13228) wifi: Received 1400 bytes 0.5050, ccdd[0m
+[0;32mI (13228) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13238) wifi: Received 1400 bytes 0.5060, 00[0m
+[0;32mI (13238) wifi: Wifi Spaces Left:5[0m
+[0;32mI (13248) wifi: Received 1400 bytes 0.5071, ceee[0m
+[0;32mI (13248) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (13248) wifi: Wifi Spaces Left:5[0m
+[0;32mI (13258) wifi: Received 1400 bytes 0.5082, 00[0m
+[0;32mI (13268) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13268) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (13278) wifi: Received 1400 bytes 0.5092, ddde[0m
+[0;32mI (13278) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13278) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (13278) wifi: Received 1400 bytes 0.5103, 00[0m
+[0;32mI (13288) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13298) wifi: Received 1400 bytes 0.5114, ddde[0m
+[0;32mI (13298) wifi: Wifi Spaces Left:3[0m
+[0;32mI (13308) wifi: Received 1400 bytes 0.5124, 00[0m
+[0;32mI (13308) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (13308) wifi: Wifi Spaces Left:3[0m
+[0;32mI (13328) wifi: Received 1400 bytes 0.5135, eeee[0m
+[0;32mI (13328) wifi: Wifi Spaces Left:2[0m
+[0;32mI (13328) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (13338) wifi: Received 1400 bytes 0.5146, 00[0m
+[0;32mI (13338) wifi: Wifi Spaces Left:2[0m
+[0;32mI (13348) wifi: Received 1400 bytes 0.5156, dded[0m
+[0;32mI (13348) wifi: Wifi Spaces Left:1[0m
+[0;32mI (13348) wifi: Received 1400 bytes 0.5167, 00[0m
+[0;32mI (13348) SPI: SPI  Spaces Left:2 8997[0m
+[0;32mI (13358) wifi: Wifi Spaces Left:1[0m
+[0;32mI (13368) wifi: Received 1400 bytes 0.5178, dc99[0m
+[0;32mI (13368) wifi: Wifi Spaces Left:0[0m
+[0;32mI (13378) wifi: Received 1400 bytes 0.5188, 00[0m
+[0;32mI (13378) wifi: Wifi Spaces Left:0[0m
+[0;32mI (13378) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (13388) wifi: Received 760 bytes 0.5194, eeed[0m
+[0;32mI (13408) SPI: SPI  Spaces Left:1 9a97[0m
+[0;32mI (13408) SPI: SPI  Spaces Left:2 6895[0m
+[0;32mI (13428) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (13448) SPI: SPI  Spaces Left:4 5432[0m
+[0;32mI (13458) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (13478) SPI: SPI  Spaces Left:6 6545[0m
+[0;32mI (13498) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (13518) SPI: SPI  Spaces Left:8 6678[0m
+[0;32mI (13528) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (13548) SPI: SPI  Spaces Left:10 4567[0m
+[0;32mI (13568) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (13578) SPI: SPI  Spaces Left:12 7568[0m
+[0;32mI (13588) wifi: Wifi Spaces Left:11[0m
+[0;32mI (13588) wifi: Received 1400 bytes 0.5205, 00[0m
+[0;32mI (13588) wifi: Wifi Spaces Left:10[0m
+[0;32mI (13598) wifi: Received 1400 bytes 0.5215, 3321[0m
+[0;32mI (13598) wifi: Wifi Spaces Left:9[0m
+[0;32mI (13598) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (13598) wifi: Received 1400 bytes 0.5226, 00[0m
+[0;32mI (13608) wifi: Wifi Spaces Left:9[0m
+[0;32mI (13618) wifi: Received 1400 bytes 0.5237, acc8[0m
+[0;32mI (13618) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13628) wifi: Received 1400 bytes 0.5247, 00[0m
+[0;32mI (13628) wifi: Wifi Spaces Left:8[0m
+[0;32mI (13628) SPI: SPI  Spaces Left:8 8aa7[0m
+[0;32mI (13638) wifi: Received 1400 bytes 0.5258, 2235[0m
+[0;32mI (13648) wifi: Wifi Spaces Left:7[0m
+[0;32mI (13648) wifi: Received 1400 bytes 0.5269, 00[0m
+[0;32mI (13648) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13658) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (13658) wifi: Received 1400 bytes 0.5279, 5113[0m
+[0;32mI (13668) wifi: Wifi Spaces Left:6[0m
+[0;32mI (13668) wifi: Received 1400 bytes 0.5290, 00[0m
+[0;32mI (13678) wifi: Wifi Spaces Left:5[0m
+[0;32mI (13678) SPI: SPI  Spaces Left:6 036[0m
+[0;32mI (13678) wifi: Received 360 bytes 0.5293, 3455[0m
+[0;32mI (13688) wifi: Wifi Spaces Left:5[0m
+[0;32mI (13698) wifi: Received 1400 bytes 0.5303, 00[0m
+[0;32mI (13698) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13698) wifi: Received 1400 bytes 0.5314, 1376[0m
+[0;32mI (13698) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (13708) wifi: Wifi Spaces Left:4[0m
+[0;32mI (13718) wifi: Received 1400 bytes 0.5325, 00[0m
+[0;32mI (13718) wifi: Wifi Spaces Left:3[0m
+[0;32mI (13728) wifi: Received 1400 bytes 0.5335, 07b[0m
+[0;32mI (13728) wifi: Wifi Spaces Left:2[0m
+[0;32mI (13738) SPI: SPI  Spaces Left:3 8666[0m
+[0;32mI (13738) wifi: Received 1400 bytes 0.5346, 00[0m
+[0;32mI (13748) wifi: Wifi Spaces Left:2[0m
+[0;32mI (13758) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (13758) wifi: Received 1400 bytes 0.5356, 038[0m
+[0;32mI (13758) wifi: Wifi Spaces Left:2[0m
+[0;32mI (13758) wifi: Received 1400 bytes 0.5367, 00[0m
+[0;32mI (13768) wifi: Wifi Spaces Left:1[0m
+[0;32mI (13768) wifi: Received 280 bytes 0.5369, 4432[0m
+[0;32mI (13778) wifi: Wifi Spaces Left:0[0m
+[0;32mI (13778) SPI: SPI  Spaces Left:1 9999[0m
+[0;32mI (13798) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (13808) wifi: Received 1400 bytes 0.5380, 00[0m
+[0;32mI (13808) wifi: Wifi Spaces Left:1[0m
+[0;32mI (13808) wifi: Received 1400 bytes 0.5391, 2412[0m
+[0;32mI (13808) wifi: Wifi Spaces Left:0[0m
+[0;32mI (13818) wifi: Received 1400 bytes 0.5401, 00[0m
+[0;32mI (13818) SPI: SPI  Spaces Left:1 9976[0m
+[0;32mI (13848) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (13858) SPI: SPI  Spaces Left:3 1110[0m
+[0;32mI (13878) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (13898) SPI: SPI  Spaces Left:5 1121[0m
+[0;32mI (13908) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (13928) SPI: SPI  Spaces Left:7 9bbb[0m
+[0;32mI (13948) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (13958) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (13978) SPI: SPI  Spaces Left:10 1220[0m
+[0;32mI (13988) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (13988) SPI: SPI  Spaces Left:12 dede[0m
+[0;32mI (14008) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (14018) wifi: Wifi Spaces Left:12[0m
+[0;32mI (14028) SPI: SPI  Spaces Left:13 657c[0m
+[0;32mI (14028) wifi: Received 1400 bytes 0.5412, eeee[0m
+[0;32mI (14028) wifi: Wifi Spaces Left:12[0m
+[0;32mI (14028) wifi: Received 1400 bytes 0.5423, 00[0m
+[0;32mI (14038) wifi: Wifi Spaces Left:11[0m
+[0;32mI (14038) wifi: Received 1400 bytes 0.5433, eeee[0m
+[0;32mI (14048) wifi: Wifi Spaces Left:10[0m
+[0;32mI (14048) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (14048) wifi: Received 1400 bytes 0.5444, 00[0m
+[0;32mI (14058) wifi: Wifi Spaces Left:10[0m
+[0;32mI (14068) wifi: Received 1400 bytes 0.5455, 2ab7[0m
+[0;32mI (14068) wifi: Wifi Spaces Left:9[0m
+[0;32mI (14068) SPI: SPI  Spaces Left:10 dddd[0m
+[0;32mI (14068) wifi: Received 1400 bytes 0.5465, 00[0m
+[0;32mI (14078) wifi: Wifi Spaces Left:9[0m
+[0;32mI (14088) wifi: Received 1400 bytes 0.5476, eeee[0m
+[0;32mI (14088) wifi: Wifi Spaces Left:8[0m
+[0;32mI (14098) wifi: Received 1400 bytes 0.5486, 00[0m
+[0;32mI (14098) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (14098) wifi: Wifi Spaces Left:8[0m
+[0;32mI (14118) wifi: Received 1400 bytes 0.5497, adc7[0m
+[0;32mI (14118) wifi: Wifi Spaces Left:7[0m
+[0;32mI (14118) wifi: Received 1400 bytes 0.5508, 00[0m
+[0;32mI (14118) wifi: Wifi Spaces Left:7[0m
+[0;32mI (14118) SPI: SPI  Spaces Left:8 edee[0m
+[0;32mI (14128) wifi: Received 1400 bytes 0.5518, eeee[0m
+[0;32mI (14138) wifi: Wifi Spaces Left:6[0m
+[0;32mI (14148) wifi: Received 1400 bytes 0.5529, 00[0m
+[0;32mI (14148) wifi: Wifi Spaces Left:5[0m
+[0;32mI (14158) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (14158) wifi: Received 1400 bytes 0.5540, ea41[0m
+[0;32mI (14158) wifi: Wifi Spaces Left:5[0m
+[0;32mI (14168) wifi: Received 1400 bytes 0.5550, 00[0m
+[0;32mI (14168) wifi: Wifi Spaces Left:4[0m
+[0;32mI (14168) SPI: SPI  Spaces Left:5 4d7[0m
+[0;32mI (14178) wifi: Received 1400 bytes 0.5561, 8614[0m
+[0;32mI (14178) wifi: Wifi Spaces Left:4[0m
+[0;32mI (14188) wifi: Received 1400 bytes 0.5572, 00[0m
+[0;32mI (14188) wifi: Wifi Spaces Left:3[0m
+[0;32mI (14198) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (14198) wifi: Received 1400 bytes 0.5582, 167[0m
+[0;32mI (14208) wifi: Wifi Spaces Left:3[0m
+[0;32mI (14208) wifi: Received 1400 bytes 0.5593, 00[0m
+[0;32mI (14218) wifi: Wifi Spaces Left:2[0m
+[0;32mI (14218) SPI: SPI  Spaces Left:3 eddd[0m
+[0;32mI (14218) wifi: Received 1400 bytes 0.5604, 6bde[0m
+[0;32mI (14228) wifi: Wifi Spaces Left:2[0m
+[0;32mI (14228) wifi: Received 1400 bytes 0.5614, e00[0m
+[0;32mI (14238) wifi: Wifi Spaces Left:1[0m
+[0;32mI (14238) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (14238) wifi: Received 1400 bytes 0.5625, eeee[0m
+[0;32mI (14248) wifi: Wifi Spaces Left:1[0m
+[0;32mI (14258) wifi: Received 1400 bytes 0.5636, 2786[0m
+[0;32mI (14258) wifi: Wifi Spaces Left:0[0m
+[0;32mI (14268) wifi: Received 1400 bytes 0.5646, 00[0m
+[0;32mI (14268) SPI: SPI  Spaces Left:1 eeed[0m
+[0;32mI (14268) wifi: Wifi Spaces Left:0[0m
+[0;32mI (14278) wifi: Received 1400 bytes 0.5657, 4553[0m
+[0;32mI (14288) SPI: SPI  Spaces Left:1 e00[0m
+[0;32mI (14308) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (14328) SPI: SPI  Spaces Left:3 c743[0m
+[0;32mI (14338) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (14358) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (14378) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (14388) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (14398) SPI: SPI  Spaces Left:8 aaa9[0m
+[0;32mI (14418) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (14438) SPI: SPI  Spaces Left:10 cbbc[0m
+[0;32mI (14448) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (14468) SPI: SPI  Spaces Left:12 ccdd[0m
+[0;32mI (14488) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (14488) wifi: Wifi Spaces Left:12[0m
+[0;32mI (14488) wifi: Received 1400 bytes 0.5668, 00[0m
+[0;32mI (14498) wifi: Wifi Spaces Left:11[0m
+[0;32mI (14498) wifi: Received 1400 bytes 0.5678, 8510[0m
+[0;32mI (14498) wifi: Wifi Spaces Left:10[0m
+[0;32mI (14498) wifi: Received 1400 bytes 0.5689, 00[0m
+[0;32mI (14508) SPI: SPI  Spaces Left:11 ceee[0m
+[0;32mI (14508) wifi: Wifi Spaces Left:10[0m
+[0;32mI (14518) wifi: Received 1400 bytes 0.5700, 2466[0m
+[0;32mI (14518) wifi: Wifi Spaces Left:9[0m
+[0;32mI (14528) wifi: Received 1400 bytes 0.5710, 00[0m
+[0;32mI (14528) wifi: Wifi Spaces Left:8[0m
+[0;32mI (14528) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (14558) SPI: SPI  Spaces Left:10 ddde[0m
+[0;32mI (14538) wifi: Received 1400 bytes 0.5721, 9aa6[0m
+[0;32mI (14558) wifi: Wifi Spaces Left:9[0m
+[0;32mI (14568) wifi: Received 1400 bytes 0.5731, 00[0m
+[0;32mI (14568) wifi: Wifi Spaces Left:8[0m
+[0;32mI (14568) wifi: Received 1400 bytes 0.5742, 4685[0m
+[0;32mI (14568) wifi: Wifi Spaces Left:7[0m
+[0;32mI (14578) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (14578) wifi: Received 1400 bytes 0.5753, 00[0m
+[0;32mI (14588) wifi: Wifi Spaces Left:7[0m
+[0;32mI (14598) wifi: Received 1400 bytes 0.5763, 6777[0m
+[0;32mI (14598) wifi: Wifi Spaces Left:6[0m
+[0;32mI (14598) SPI: SPI  Spaces Left:7 ddde[0m
+[0;32mI (14608) wifi: Received 1400 bytes 0.5774, 00[0m
+[0;32mI (14608) wifi: Wifi Spaces Left:6[0m
+[0;32mI (14608) wifi: Received 1400 bytes 0.5785, 00[0m
+[0;32mI (14618) wifi: Wifi Spaces Left:5[0m
+[0;32mI (14618) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (14618) wifi: Received 1400 bytes 0.5795, 00[0m
+[0;32mI (14628) wifi: Wifi Spaces Left:5[0m
+[0;32mI (14638) wifi: Received 1400 bytes 0.5806, 1124[0m
+[0;32mI (14638) wifi: Wifi Spaces Left:4[0m
+[0;32mI (14648) wifi: Received 1400 bytes 0.5817, 00[0m
+[0;32mI (14648) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (14648) wifi: Wifi Spaces Left:4[0m
+[0;32mI (14658) wifi: Received 1400 bytes 0.5827, 013[0m
+[0;32mI (14668) wifi: Wifi Spaces Left:3[0m
+[0;32mI (14668) wifi: Received 1400 bytes 0.5838, 00[0m
+[0;32mI (14668) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (14668) wifi: Wifi Spaces Left:3[0m
+[0;32mI (14678) wifi: Received 1400 bytes 0.5849, 1323[0m
+[0;32mI (14688) wifi: Wifi Spaces Left:2[0m
+[0;32mI (14698) SPI: SPI  Spaces Left:3 dded[0m
+[0;32mI (14698) wifi: Received 1400 bytes 0.5859, 00[0m
+[0;32mI (14698) wifi: Wifi Spaces Left:2[0m
+[0;32mI (14708) wifi: Received 1400 bytes 0.5870, cdd9[0m
+[0;32mI (14708) wifi: Wifi Spaces Left:1[0m
+[0;32mI (14718) wifi: Received 1400 bytes 0.5881, 00[0m
+[0;32mI (14718) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (14718) wifi: Wifi Spaces Left:1[0m
+[0;32mI (14738) SPI: SPI  Spaces Left:2 dc99[0m
+[0;32mI (14748) wifi: Received 1400 bytes 0.5891, 200[0m
+[0;32mI (14748) wifi: Wifi Spaces Left:1[0m
+[0;32mI (14758) wifi: Received 1400 bytes 0.5902, 00[0m
+[0;32mI (14758) wifi: Wifi Spaces Left:0[0m
+[0;32mI (14758) wifi: Received 1400 bytes 0.5913, 011[0m
+[0;32mI (14758) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (14758) wifi: Wifi Spaces Left:0[0m
+[0;32mI (14778) wifi: Received 1400 bytes 0.5923, 00[0m
+[0;32mI (14788) SPI: SPI  Spaces Left:1 eeed[0m
+[0;32mI (14798) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (14808) SPI: SPI  Spaces Left:3 3321[0m
+[0;32mI (14828) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (14848) SPI: SPI  Spaces Left:5 acc8[0m
+[0;32mI (14858) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (14878) SPI: SPI  Spaces Left:7 2235[0m
+[0;32mI (14898) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (14908) SPI: SPI  Spaces Left:9 5113[0m
+[0;32mI (14928) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (14948) SPI: SPI  Spaces Left:11 3455[0m
+[0;32mI (14948) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (14968) SPI: SPI  Spaces Left:13 1376[0m
+[0;32mI (14978) wifi: Wifi Spaces Left:12[0m
+[0;32mI (14978) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (14988) wifi: Received 1400 bytes 0.5934, 4884[0m
+[0;32mI (14988) wifi: Wifi Spaces Left:12[0m
+[0;32mI (14998) wifi: Received 1400 bytes 0.5945, 00[0m
+[0;32mI (14998) wifi: Wifi Spaces Left:11[0m
+[0;32mI (14998) SPI: SPI  Spaces Left:12 07b[0m
+[0;32mI (15008) wifi: Received 1400 bytes 0.5955, 016[0m
+[0;32mI (15008) wifi: Wifi Spaces Left:11[0m
+[0;32mI (15018) wifi: Received 1400 bytes 0.5966, 00[0m
+[0;32mI (15018) wifi: Wifi Spaces Left:10[0m
+[0;32mI (15018) wifi: Received 1400 bytes 0.5977, 9973[0m
+[0;32mI (15018) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (15028) wifi: Wifi Spaces Left:10[0m
+[0;32mI (15038) wifi: Received 1400 bytes 0.5987, 00[0m
+[0;32mI (15038) wifi: Wifi Spaces Left:9[0m
+[0;32mI (15048) wifi: Received 1400 bytes 0.5998, 36a7[0m
+[0;32mI (15048) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15048) SPI: SPI  Spaces Left:9 038[0m
+[0;32mI (15058) wifi: Received 1400 bytes 0.6008, 00[0m
+[0;32mI (15068) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15068) wifi: Received 1400 bytes 0.6019, cc62[0m
+[0;32mI (15078) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15078) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (15078) wifi: Received 1400 bytes 0.6030, 00[0m
+[0;32mI (15088) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15088) wifi: Received 1400 bytes 0.6040, eeee[0m
+[0;32mI (15098) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15098) SPI: SPI  Spaces Left:7 4432[0m
+[0;32mI (15108) wifi: Received 1400 bytes 0.6051, 00[0m
+[0;32mI (15108) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (15108) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15118) wifi: Received 1400 bytes 0.6062, ddee[0m
+[0;32mI (15128) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15128) wifi: Received 1400 bytes 0.6072, 00[0m
+[0;32mI (15128) SPI: SPI  Spaces Left:7 2412[0m
+[0;32mI (15128) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15138) wifi: Received 1400 bytes 0.6083, eedd[0m
+[0;32mI (15148) wifi: Wifi Spaces Left:5[0m
+[0;32mI (15148) wifi: Received 1400 bytes 0.6094, 00[0m
+[0;32mI (15158) wifi: Wifi Spaces Left:4[0m
+[0;32mI (15158) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (15158) wifi: Received 1400 bytes 0.6104, eeee[0m
+[0;32mI (15168) wifi: Wifi Spaces Left:4[0m
+[0;32mI (15178) wifi: Received 1400 bytes 0.6115, 00[0m
+[0;32mI (15178) wifi: Wifi Spaces Left:3[0m
+[0;32mI (15178) wifi: Received 1400 bytes 0.6126, eeee[0m
+[0;32mI (15188) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (15188) wifi: Wifi Spaces Left:3[0m
+[0;32mI (15198) wifi: Received 1400 bytes 0.6136, 00[0m
+[0;32mI (15198) wifi: Wifi Spaces Left:2[0m
+[0;32mI (15208) wifi: Received 1400 bytes 0.6147, eeee[0m
+[0;32mI (15208) wifi: Wifi Spaces Left:1[0m
+[0;32mI (15208) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (15218) wifi: Received 1400 bytes 0.6158, 00[0m
+[0;32mI (15228) wifi: Wifi Spaces Left:1[0m
+[0;32mI (15228) wifi: Received 1400 bytes 0.6168, eeee[0m
+[0;32mI (15238) wifi: Wifi Spaces Left:0[0m
+[0;32mI (15238) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (15238) wifi: Received 1400 bytes 0.6179, 00[0m
+[0;32mI (15248) wifi: Wifi Spaces Left:0[0m
+[0;32mI (15248) wifi: Received 1400 bytes 0.6190, dddd[0m
+[0;32mI (15258) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (15278) SPI: SPI  Spaces Left:2 2ab7[0m
+[0;32mI (15298) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (15318) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (15328) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (15348) SPI: SPI  Spaces Left:6 adc7[0m
+[0;32mI (15368) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (15388) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (15398) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (15418) SPI: SPI  Spaces Left:10 ea41[0m
+[0;32mI (15438) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (15448) SPI: SPI  Spaces Left:12 8614[0m
+[0;32mI (15458) wifi: Wifi Spaces Left:11[0m
+[0;32mI (15468) wifi: Received 1400 bytes 0.6200, 00[0m
+[0;32mI (15468) wifi: Wifi Spaces Left:10[0m
+[0;32mI (15468) wifi: Received 1400 bytes 0.6211, dccc[0m
+[0;32mI (15468) wifi: Wifi Spaces Left:9[0m
+[0;32mI (15468) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (15478) wifi: Received 1400 bytes 0.6222, 00[0m
+[0;32mI (15478) wifi: Wifi Spaces Left:9[0m
+[0;32mI (15488) wifi: Received 1400 bytes 0.6232, 7666[0m
+[0;32mI (15488) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15498) wifi: Received 1400 bytes 0.6243, 00[0m
+[0;32mI (15498) SPI: SPI  Spaces Left:9 167[0m
+[0;32mI (15498) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15518) wifi: Received 1400 bytes 0.6254, ddee[0m
+[0;32mI (15518) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15528) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (15528) wifi: Received 1400 bytes 0.6264, 00[0m
+[0;32mI (15528) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15528) wifi: Received 1400 bytes 0.6275, 7777[0m
+[0;32mI (15538) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15548) SPI: SPI  Spaces Left:7 6bde[0m
+[0;32mI (15548) wifi: Received 1400 bytes 0.6285, 00[0m
+[0;32mI (15548) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15558) wifi: Received 1400 bytes 0.6296, 00[0m
+[0;32mI (15558) wifi: Wifi Spaces Left:5[0m
+[0;32mI (15568) SPI: SPI  Spaces Left:6 e00[0m
+[0;32mI (15568) wifi: Received 1400 bytes 0.6307, 00[0m
+[0;32mI (15578) wifi: Wifi Spaces Left:5[0m
+[0;32mI (15578) wifi: Received 1400 bytes 0.6317, 00[0m
+[0;32mI (15578) wifi: Wifi Spaces Left:4[0m
+[0;32mI (15588) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (15588) wifi: Received 1400 bytes 0.6328, 00[0m
+[0;32mI (15598) wifi: Wifi Spaces Left:4[0m
+[0;32mI (15608) wifi: Received 1400 bytes 0.6339, 00[0m
+[0;32mI (15608) wifi: Wifi Spaces Left:3[0m
+[0;32mI (15618) SPI: SPI  Spaces Left:4 2786[0m
+[0;32mI (15618) wifi: Received 1400 bytes 0.6349, 00[0m
+[0;32mI (15618) wifi: Wifi Spaces Left:3[0m
+[0;32mI (15628) wifi: Received 1400 bytes 0.6360, b410[0m
+[0;32mI (15628) wifi: Wifi Spaces Left:2[0m
+[0;32mI (15638) wifi: Received 1400 bytes 0.6371, 00[0m
+[0;32mI (15638) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (15638) wifi: Wifi Spaces Left:2[0m
+[0;32mI (15648) wifi: Received 1400 bytes 0.6381, effe[0m
+[0;32mI (15648) wifi: Wifi Spaces Left:1[0m
+[0;32mI (15658) wifi: Received 1400 bytes 0.6392, 00[0m
+[0;32mI (15658) wifi: Wifi Spaces Left:0[0m
+[0;32mI (15658) SPI: SPI  Spaces Left:1 4553[0m
+[0;32mI (15668) wifi: Received 1400 bytes 0.6403, deee[0m
+[0;32mI (15678) wifi: Wifi Spaces Left:0[0m
+[0;32mI (15678) wifi: Received 1400 bytes 0.6413, 00[0m
+[0;32mI (15688) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (15708) SPI: SPI  Spaces Left:2 8510[0m
+[0;32mI (15728) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (15738) SPI: SPI  Spaces Left:4 2466[0m
+[0;32mI (15758) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (15778) SPI: SPI  Spaces Left:6 9aa6[0m
+[0;32mI (15788) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (15808) SPI: SPI  Spaces Left:8 4685[0m
+[0;32mI (15828) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (15838) SPI: SPI  Spaces Left:10 6777[0m
+[0;32mI (15858) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (15878) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (15888) wifi: Wifi Spaces Left:11[0m
+[0;32mI (15888) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (15898) wifi: Received 1400 bytes 0.6424, 4a93[0m
+[0;32mI (15898) wifi: Wifi Spaces Left:11[0m
+[0;32mI (15908) wifi: Received 1400 bytes 0.6435, 00[0m
+[0;32mI (15908) wifi: Wifi Spaces Left:10[0m
+[0;32mI (15908) wifi: Received 1400 bytes 0.6445, 1881[0m
+[0;32mI (15908) SPI: SPI  Spaces Left:11 1124[0m
+[0;32mI (15908) wifi: Wifi Spaces Left:10[0m
+[0;32mI (15918) wifi: Received 1400 bytes 0.6456, 00[0m
+[0;32mI (15928) wifi: Wifi Spaces Left:9[0m
+[0;32mI (15928) wifi: Received 1400 bytes 0.6467, cddd[0m
+[0;32mI (15938) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15938) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (15938) wifi: Received 1400 bytes 0.6477, 00[0m
+[0;32mI (15948) wifi: Wifi Spaces Left:8[0m
+[0;32mI (15958) wifi: Received 1400 bytes 0.6488, eddd[0m
+[0;32mI (15958) wifi: Wifi Spaces Left:7[0m
+[0;32mI (15958) wifi: Received 1400 bytes 0.6499, 00[0m
+[0;32mI (15968) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15968) SPI: SPI  Spaces Left:7 013[0m
+[0;32mI (15968) wifi: Received 1400 bytes 0.6509, eeee[0m
+[0;32mI (15978) wifi: Wifi Spaces Left:6[0m
+[0;32mI (15988) wifi: Received 1400 bytes 0.6520, 00[0m
+[0;32mI (15988) wifi: Wifi Spaces Left:5[0m
+[0;32mI (15998) wifi: Received 1400 bytes 0.6530, eeee[0m
+[0;32mI (15998) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (15998) wifi: Wifi Spaces Left:5[0m
+[0;32mI (16018) wifi: Received 1400 bytes 0.6541, 00[0m
+[0;32mI (16018) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16018) SPI: SPI  Spaces Left:5 1323[0m
+[0;32mI (16028) wifi: Received 1400 bytes 0.6552, eeee[0m
+[0;32mI (16028) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16028) wifi: Received 1400 bytes 0.6562, 00[0m
+[0;32mI (16038) wifi: Wifi Spaces Left:3[0m
+[0;32mI (16038) wifi: Received 1400 bytes 0.6573, edde[0m
+[0;32mI (16038) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (16048) wifi: Wifi Spaces Left:3[0m
+[0;32mI (16058) wifi: Received 1400 bytes 0.6584, 00[0m
+[0;32mI (16058) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16068) wifi: Received 1400 bytes 0.6594, eeee[0m
+[0;32mI (16068) SPI: SPI  Spaces Left:3 cdd9[0m
+[0;32mI (16068) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16078) wifi: Received 280 bytes 0.6597, 00[0m
+[0;32mI (16078) wifi: Wifi Spaces Left:1[0m
+[0;32mI (16088) wifi: Received 1400 bytes 0.6607, 00[0m
+[0;32mI (16088) wifi: Wifi Spaces Left:0[0m
+[0;32mI (16088) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (16098) wifi: Received 1400 bytes 0.6618, 57ae[0m
+[0;32mI (16108) wifi: Wifi Spaces Left:0[0m
+[0;32mI (16108) wifi: Received 1400 bytes 0.6628, 00[0m
+[0;32mI (16118) SPI: SPI  Spaces Left:1 200[0m
+[0;32mI (16138) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (16148) SPI: SPI  Spaces Left:3 011[0m
+[0;32mI (16168) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (16188) SPI: SPI  Spaces Left:5 4884[0m
+[0;32mI (16198) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (16218) SPI: SPI  Spaces Left:7 016[0m
+[0;32mI (16238) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (16248) SPI: SPI  Spaces Left:9 9973[0m
+[0;32mI (16268) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (16288) SPI: SPI  Spaces Left:11 36a7[0m
+[0;32mI (16298) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (16318) wifi: Wifi Spaces Left:11[0m
+[0;32mI (16318) SPI: SPI  Spaces Left:12 cc62[0m
+[0;32mI (16328) wifi: Received 1400 bytes 0.6639, 00[0m
+[0;32mI (16328) wifi: Wifi Spaces Left:11[0m
+[0;32mI (16328) wifi: Received 1400 bytes 0.6650, 00[0m
+[0;32mI (16328) wifi: Wifi Spaces Left:10[0m
+[0;32mI (16338) wifi: Received 1400 bytes 0.6660, 00[0m
+[0;32mI (16338) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (16338) wifi: Wifi Spaces Left:10[0m
+[0;32mI (16348) wifi: Received 1400 bytes 0.6671, 00[0m
+[0;32mI (16358) wifi: Wifi Spaces Left:9[0m
+[0;32mI (16368) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (16368) wifi: Received 1400 bytes 0.6682, 00[0m
+[0;32mI (16368) wifi: Wifi Spaces Left:9[0m
+[0;32mI (16378) wifi: Received 1400 bytes 0.6692, 00[0m
+[0;32mI (16378) wifi: Wifi Spaces Left:8[0m
+[0;32mI (16378) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (16388) wifi: Received 1400 bytes 0.6703, 00[0m
+[0;32mI (16388) wifi: Wifi Spaces Left:8[0m
+[0;32mI (16398) wifi: Received 1400 bytes 0.6714, 00[0m
+[0;32mI (16398) wifi: Wifi Spaces Left:7[0m
+[0;32mI (16408) SPI: SPI  Spaces Left:8 ddee[0m
+[0;32mI (16408) wifi: Received 1400 bytes 0.6724, 00[0m
+[0;32mI (16418) wifi: Wifi Spaces Left:7[0m
+[0;32mI (16428) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (16428) wifi: Received 1400 bytes 0.6735, 00[0m
+[0;32mI (16428) wifi: Wifi Spaces Left:7[0m
+[0;32mI (16438) wifi: Received 1400 bytes 0.6746, 00[0m
+[0;32mI (16438) wifi: Wifi Spaces Left:6[0m
+[0;32mI (16438) wifi: Received 1400 bytes 0.6756, 00[0m
+[0;32mI (16448) wifi: Wifi Spaces Left:5[0m
+[0;32mI (16448) SPI: SPI  Spaces Left:6 eedd[0m
+[0;32mI (16458) wifi: Received 1400 bytes 0.6767, 00[0m
+[0;32mI (16458) wifi: Wifi Spaces Left:5[0m
+[0;32mI (16468) wifi: Received 1400 bytes 0.6778, 00[0m
+[0;32mI (16468) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16468) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (16478) wifi: Received 1400 bytes 0.6788, 00[0m
+[0;32mI (16478) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16488) wifi: Received 1400 bytes 0.6799, 00[0m
+[0;32mI (16488) wifi: Wifi Spaces Left:3[0m
+[0;32mI (16498) wifi: Received 760 bytes 0.6805, 00[0m
+[0;32mI (16498) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (16498) wifi: Wifi Spaces Left:3[0m
+[0;32mI (16518) wifi: Received 1400 bytes 0.6815, ba14[0m
+[0;32mI (16518) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16528) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (16528) wifi: Received 1400 bytes 0.6826, 00[0m
+[0;32mI (16528) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16528) wifi: Received 1400 bytes 0.6837, 3125[0m
+[0;32mI (16538) wifi: Wifi Spaces Left:1[0m
+[0;32mI (16538) wifi: Received 1400 bytes 0.6847, 00[0m
+[0;32mI (16548) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (16548) wifi: Wifi Spaces Left:1[0m
+[0;32mI (16568) wifi: Received 1400 bytes 0.6858, b99c[0m
+[0;32mI (16568) wifi: Wifi Spaces Left:0[0m
+[0;32mI (16568) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (16578) wifi: Received 1400 bytes 0.6869, 00[0m
+[0;32mI (16578) wifi: Wifi Spaces Left:0[0m
+[0;32mI (16578) wifi: Received 1400 bytes 0.6879, dddd[0m
+[0;32mI (16588) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (16608) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (16628) SPI: SPI  Spaces Left:3 eeee[0m
+[0;32mI (16638) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (16658) SPI: SPI  Spaces Left:5 dddd[0m
+[0;32mI (16678) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (16688) SPI: SPI  Spaces Left:7 dccc[0m
+[0;32mI (16708) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (16728) SPI: SPI  Spaces Left:9 7666[0m
+[0;32mI (16738) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (16758) SPI: SPI  Spaces Left:11 ddee[0m
+[0;32mI (16778) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (16788) wifi: Wifi Spaces Left:11[0m
+[0;32mI (16788) SPI: SPI  Spaces Left:12 7777[0m
+[0;32mI (16798) wifi: Received 1400 bytes 0.6890, 00[0m
+[0;32mI (16798) wifi: Wifi Spaces Left:11[0m
+[0;32mI (16798) wifi: Received 1400 bytes 0.6901, 65ae[0m
+[0;32mI (16798) wifi: Wifi Spaces Left:10[0m
+[0;32mI (16808) wifi: Received 1400 bytes 0.6911, 00[0m
+[0;32mI (16808) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (16808) wifi: Wifi Spaces Left:10[0m
+[0;32mI (16818) wifi: Received 1400 bytes 0.6922, ed72[0m
+[0;32mI (16828) wifi: Wifi Spaces Left:9[0m
+[0;32mI (16838) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (16838) wifi: Received 1400 bytes 0.6933, 00[0m
+[0;32mI (16838) wifi: Wifi Spaces Left:9[0m
+[0;32mI (16848) wifi: Received 1400 bytes 0.6943, 2851[0m
+[0;32mI (16858) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (16858) wifi: Wifi Spaces Left:9[0m
+[0;32mI (16858) wifi: Received 1400 bytes 0.6954, 00[0m
+[0;32mI (16858) wifi: Wifi Spaces Left:8[0m
+[0;32mI (16868) wifi: Received 1400 bytes 0.6965, 327d[0m
+[0;32mI (16868) wifi: Wifi Spaces Left:7[0m
+[0;32mI (16868) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (16878) wifi: Received 1400 bytes 0.6975, 00[0m
+[0;32mI (16888) wifi: Wifi Spaces Left:7[0m
+[0;32mI (16898) wifi: Received 1400 bytes 0.6986, deed[0m
+[0;32mI (16898) wifi: Wifi Spaces Left:6[0m
+[0;32mI (16898) wifi: Received 1400 bytes 0.6996, 00[0m
+[0;32mI (16898) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (16908) wifi: Wifi Spaces Left:6[0m
+[0;32mI (16918) wifi: Received 1400 bytes 0.7007, dd92[0m
+[0;32mI (16918) wifi: Wifi Spaces Left:5[0m
+[0;32mI (16928) wifi: Received 1400 bytes 0.7018, 00[0m
+[0;32mI (16928) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16928) wifi: Received 1400 bytes 0.7028, 18b2[0m
+[0;32mI (16938) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (16938) wifi: Wifi Spaces Left:4[0m
+[0;32mI (16948) wifi: Received 840 bytes 0.7035, 00[0m
+[0;32mI (16948) wifi: Wifi Spaces Left:3[0m
+[0;32mI (16958) wifi: Received 1400 bytes 0.7045, eeee[0m
+[0;32mI (16958) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16958) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (16968) wifi: Received 1400 bytes 0.7056, 00[0m
+[0;32mI (16968) wifi: Wifi Spaces Left:2[0m
+[0;32mI (16978) wifi: Received 1400 bytes 0.7067, beed[0m
+[0;32mI (16978) wifi: Wifi Spaces Left:1[0m
+[0;32mI (16988) SPI: SPI  Spaces Left:2 b410[0m
+[0;32mI (16988) wifi: Received 1400 bytes 0.7077, 00[0m
+[0;32mI (16998) wifi: Wifi Spaces Left:1[0m
+[0;32mI (16998) wifi: Received 1400 bytes 0.7088, eeec[0m
+[0;32mI (17008) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17008) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (17018) wifi: Received 1400 bytes 0.7099, 00[0m
+[0;32mI (17018) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17018) wifi: Received 1400 bytes 0.7109, bbcd[0m
+[0;32mI (17028) SPI: SPI  Spaces Left:1 effe[0m
+[0;32mI (17048) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (17068) SPI: SPI  Spaces Left:3 deee[0m
+[0;32mI (17088) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (17098) SPI: SPI  Spaces Left:5 4a93[0m
+[0;32mI (17118) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (17138) SPI: SPI  Spaces Left:7 1881[0m
+[0;32mI (17158) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (17168) Main: Manage Tasks Idle[0m
+[0;32mI (17168) SPI: SPI  Spaces Left:9 cddd[0m
+[0;32mI (17188) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (17208) SPI: SPI  Spaces Left:11 eddd[0m
+[0;32mI (17218) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (17228) wifi: Wifi Spaces Left:11[0m
+[0;32mI (17238) wifi: Received 1400 bytes 0.7120, 00[0m
+[0;32mI (17238) wifi: Wifi Spaces Left:10[0m
+[0;32mI (17238) wifi: Received 1400 bytes 0.7131, dded[0m
+[0;32mI (17238) wifi: Wifi Spaces Left:9[0m
+[0;32mI (17238) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (17248) wifi: Received 1400 bytes 0.7141, 00[0m
+[0;32mI (17258) wifi: Wifi Spaces Left:9[0m
+[0;32mI (17258) wifi: Received 1400 bytes 0.7152, 4cee[0m
+[0;32mI (17268) wifi: Wifi Spaces Left:8[0m
+[0;32mI (17268) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (17268) wifi: Received 1400 bytes 0.7163, 00[0m
+[0;32mI (17278) wifi: Wifi Spaces Left:8[0m
+[0;32mI (17278) wifi: Received 1400 bytes 0.7173, 00[0m
+[0;32mI (17288) wifi: Wifi Spaces Left:7[0m
+[0;32mI (17288) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (17288) wifi: Received 1400 bytes 0.7184, 00[0m
+[0;32mI (17298) wifi: Wifi Spaces Left:7[0m
+[0;32mI (17308) wifi: Received 1400 bytes 0.7195, 00[0m
+[0;32mI (17308) wifi: Wifi Spaces Left:6[0m
+[0;32mI (17308) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (17318) wifi: Received 1400 bytes 0.7205, 00[0m
+[0;32mI (17318) wifi: Wifi Spaces Left:6[0m
+[0;32mI (17328) wifi: Received 1400 bytes 0.7216, 00[0m
+[0;32mI (17328) wifi: Wifi Spaces Left:5[0m
+[0;32mI (17338) wifi: Received 1400 bytes 0.7227, 00[0m
+[0;32mI (17338) wifi: Wifi Spaces Left:4[0m
+[0;32mI (17338) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (17348) wifi: Received 1400 bytes 0.7237, 00[0m
+[0;32mI (17358) wifi: Wifi Spaces Left:4[0m
+[0;32mI (17368) wifi: Received 1400 bytes 0.7248, 00[0m
+[0;32mI (17368) wifi: Wifi Spaces Left:3[0m
+[0;32mI (17368) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (17368) wifi: Received 1400 bytes 0.7259, 00[0m
+[0;32mI (17378) wifi: Wifi Spaces Left:3[0m
+[0;32mI (17388) wifi: Received 1400 bytes 0.7269, 00[0m
+[0;32mI (17388) wifi: Wifi Spaces Left:2[0m
+[0;32mI (17388) SPI: SPI  Spaces Left:3 edde[0m
+[0;32mI (17398) wifi: Received 1400 bytes 0.7280, baaa[0m
+[0;32mI (17398) wifi: Wifi Spaces Left:2[0m
+[0;32mI (17408) wifi: Received 920 bytes 0.7287, 00[0m
+[0;32mI (17408) wifi: Wifi Spaces Left:1[0m
+[0;32mI (17418) wifi: Received 1400 bytes 0.7298, 00[0m
+[0;32mI (17418) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (17418) wifi: Wifi Spaces Left:1[0m
+[0;32mI (17428) wifi: Received 1400 bytes 0.7308, 7776[0m
+[0;32mI (17428) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17438) wifi: Received 1400 bytes 0.7319, 00[0m
+[0;32mI (17438) SPI: SPI  Spaces Left:1 eeee[0m
+[0;32mI (17458) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (17468) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (17478) SPI: SPI  Spaces Left:4 57ae[0m
+[0;32mI (17498) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (17518) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (17538) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (17548) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (17568) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (17588) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (17608) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (17618) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (17638) wifi: Wifi Spaces Left:11[0m
+[0;32mI (17638) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (17648) wifi: Received 1400 bytes 0.7329, 6778[0m
+[0;32mI (17648) wifi: Wifi Spaces Left:11[0m
+[0;32mI (17648) wifi: Received 1400 bytes 0.7340, 00[0m
+[0;32mI (17648) wifi: Wifi Spaces Left:10[0m
+[0;32mI (17658) wifi: Received 1400 bytes 0.7351, 9777[0m
+[0;32mI (17658) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (17658) wifi: Wifi Spaces Left:10[0m
+[0;32mI (17668) wifi: Received 1400 bytes 0.7361, 00[0m
+[0;32mI (17678) wifi: Wifi Spaces Left:9[0m
+[0;32mI (17688) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (17688) wifi: Received 1400 bytes 0.7372, 668a[0m
+[0;32mI (17688) wifi: Wifi Spaces Left:9[0m
+[0;32mI (17698) wifi: Received 1400 bytes 0.7383, 00[0m
+[0;32mI (17698) wifi: Wifi Spaces Left:8[0m
+[0;32mI (17708) wifi: Received 360 bytes 0.7385, 4346[0m
+[0;32mI (17708) wifi: Wifi Spaces Left:8[0m
+[0;32mI (17708) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (17718) wifi: Received 1400 bytes 0.7396, 00[0m
+[0;32mI (17718) wifi: Wifi Spaces Left:7[0m
+[0;32mI (17728) wifi: Received 1400 bytes 0.7407, 551[0m
+[0;32mI (17728) wifi: Wifi Spaces Left:6[0m
+[0;32mI (17738) wifi: Received 1400 bytes 0.7417, 00[0m
+[0;32mI (17738) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (17738) wifi: Wifi Spaces Left:6[0m
+[0;32mI (17758) wifi: Received 1400 bytes 0.7428, 8621[0m
+[0;32mI (17758) wifi: Wifi Spaces Left:5[0m
+[0;32mI (17758) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (17768) wifi: Received 1400 bytes 0.7439, 00[0m
+[0;32mI (17768) wifi: Wifi Spaces Left:5[0m
+[0;32mI (17778) wifi: Received 200 bytes 0.7440, eeee[0m
+[0;32mI (17778) wifi: Wifi Spaces Left:4[0m
+[0;32mI (17788) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (17798) wifi: Received 1400 bytes 0.7451, 7899[0m
+[0;32mI (17798) wifi: Wifi Spaces Left:4[0m
+[0;32mI (17798) wifi: Received 1400 bytes 0.7462, 00[0m
+[0;32mI (17798) wifi: Wifi Spaces Left:3[0m
+[0;32mI (17798) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (17808) wifi: Received 1400 bytes 0.7472, 7777[0m
+[0;32mI (17818) wifi: Wifi Spaces Left:3[0m
+[0;32mI (17828) wifi: Received 1400 bytes 0.7483, 00[0m
+[0;32mI (17828) wifi: Wifi Spaces Left:2[0m
+[0;32mI (17828) wifi: Received 1400 bytes 0.7494, 6533[0m
+[0;32mI (17828) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (17838) wifi: Wifi Spaces Left:2[0m
+[0;32mI (17848) wifi: Received 1400 bytes 0.7504, 00[0m
+[0;32mI (17848) wifi: Wifi Spaces Left:1[0m
+[0;32mI (17848) wifi: Received 1400 bytes 0.7515, 5665[0m
+[0;32mI (17858) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (17858) wifi: Wifi Spaces Left:1[0m
+[0;32mI (17868) wifi: Received 1400 bytes 0.7526, 00[0m
+[0;32mI (17868) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17868) SPI: SPI  Spaces Left:1 ba14[0m
+[0;32mI (17878) wifi: Received 1400 bytes 0.7536, 5654[0m
+[0;32mI (17888) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17898) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (17898) wifi: Received 1400 bytes 0.7547, 00[0m
+[0;32mI (17898) wifi: Wifi Spaces Left:0[0m
+[0;32mI (17898) wifi: Received 1400 bytes 0.7557, 6566[0m
+[0;32mI (17918) SPI: SPI  Spaces Left:1 3125[0m
+[0;32mI (17938) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (17948) SPI: SPI  Spaces Left:3 b99c[0m
+[0;32mI (17968) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (17988) SPI: SPI  Spaces Left:5 dddd[0m
+[0;32mI (17998) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (18018) SPI: SPI  Spaces Left:7 65ae[0m
+[0;32mI (18038) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (18058) SPI: SPI  Spaces Left:9 ed72[0m
+[0;32mI (18068) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (18088) SPI: SPI  Spaces Left:11 2851[0m
+[0;32mI (18108) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (18108) wifi: Wifi Spaces Left:11[0m
+[0;32mI (18118) wifi: Received 1400 bytes 0.7568, 00[0m
+[0;32mI (18118) wifi: Wifi Spaces Left:10[0m
+[0;32mI (18118) SPI: SPI  Spaces Left:11 327d[0m
+[0;32mI (18128) wifi: Received 1400 bytes 0.7579, 7765[0m
+[0;32mI (18128) wifi: Wifi Spaces Left:10[0m
+[0;32mI (18128) wifi: Received 520 bytes 0.7583, 00[0m
+[0;32mI (18138) wifi: Wifi Spaces Left:9[0m
+[0;32mI (18138) wifi: Received 1400 bytes 0.7593, 4454[0m
+[0;32mI (18138) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (18148) wifi: Wifi Spaces Left:9[0m
+[0;32mI (18158) wifi: Received 1400 bytes 0.7604, 00[0m
+[0;32mI (18158) wifi: Wifi Spaces Left:8[0m
+[0;32mI (18168) wifi: Received 1400 bytes 0.7615, 6677[0m
+[0;32mI (18168) wifi: Wifi Spaces Left:7[0m
+[0;32mI (18168) SPI: SPI  Spaces Left:8 deed[0m
+[0;32mI (18168) wifi: Received 1400 bytes 0.7625, 00[0m
+[0;32mI (18178) wifi: Wifi Spaces Left:7[0m
+[0;32mI (18188) wifi: Received 1400 bytes 0.7636, 5532[0m
+[0;32mI (18188) wifi: Wifi Spaces Left:6[0m
+[0;32mI (18198) wifi: Received 1400 bytes 0.7647, 00[0m
+[0;32mI (18198) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (18198) wifi: Wifi Spaces Left:6[0m
+[0;32mI (18208) wifi: Received 1400 bytes 0.7657, 4323[0m
+[0;32mI (18218) wifi: Wifi Spaces Left:5[0m
+[0;32mI (18218) SPI: SPI  Spaces Left:6 dd92[0m
+[0;32mI (18228) wifi: Received 280 bytes 0.7659, 00[0m
+[0;32mI (18228) wifi: Wifi Spaces Left:5[0m
+[0;32mI (18228) wifi: Received 1400 bytes 0.7670, deee[0m
+[0;32mI (18238) wifi: Wifi Spaces Left:4[0m
+[0;32mI (18238) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (18248) wifi: Received 1400 bytes 0.7681, 00[0m
+[0;32mI (18248) wifi: Wifi Spaces Left:4[0m
+[0;32mI (18258) wifi: Received 1400 bytes 0.7691, 7b88[0m
+[0;32mI (18258) wifi: Wifi Spaces Left:3[0m
+[0;32mI (18258) SPI: SPI  Spaces Left:4 18b2[0m
+[0;32mI (18268) wifi: Received 1400 bytes 0.7702, 00[0m
+[0;32mI (18278) wifi: Wifi Spaces Left:3[0m
+[0;32mI (18288) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (18288) wifi: Received 1400 bytes 0.7713, 1111[0m
+[0;32mI (18288) wifi: Wifi Spaces Left:3[0m
+[0;32mI (18298) wifi: Received 1400 bytes 0.7723, 00[0m
+[0;32mI (18298) wifi: Wifi Spaces Left:2[0m
+[0;32mI (18298) SPI: SPI  Spaces Left:3 eeee[0m
+[0;32mI (18308) wifi: Received 1400 bytes 0.7734, eeed[0m
+[0;32mI (18308) wifi: Wifi Spaces Left:2[0m
+[0;32mI (18318) wifi: Received 280 bytes 0.7736, 00[0m
+[0;32mI (18318) wifi: Wifi Spaces Left:1[0m
+[0;32mI (18328) wifi: Received 1400 bytes 0.7747, 00[0m
+[0;32mI (18328) wifi: Wifi Spaces Left:0[0m
+[0;32mI (18328) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (18338) wifi: Received 1400 bytes 0.7757, 36be[0m
+[0;32mI (18338) wifi: Wifi Spaces Left:0[0m
+[0;32mI (18348) wifi: Received 1400 bytes 0.7768, 00[0m
+[0;32mI (18358) SPI: SPI  Spaces Left:1 beed[0m
+[0;32mI (18378) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (18388) SPI: SPI  Spaces Left:3 eeec[0m
+[0;32mI (18408) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (18428) SPI: SPI  Spaces Left:5 bbcd[0m
+[0;32mI (18448) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (18458) SPI: SPI  Spaces Left:7 dded[0m
+[0;32mI (18478) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (18498) SPI: SPI  Spaces Left:9 4cee[0m
+[0;32mI (18508) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (18528) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (18548) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (18548) wifi: Wifi Spaces Left:11[0m
+[0;32mI (18558) wifi: Received 1400 bytes 0.7779, eeee[0m
+[0;32mI (18558) wifi: Wifi Spaces Left:10[0m
+[0;32mI (18558) wifi: Received 1400 bytes 0.7789, 00[0m
+[0;32mI (18558) wifi: Wifi Spaces Left:9[0m
+[0;32mI (18568) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (18568) wifi: Received 1400 bytes 0.7800, bdee[0m
+[0;32mI (18578) wifi: Wifi Spaces Left:9[0m
+[0;32mI (18578) wifi: Received 1400 bytes 0.7811, 00[0m
+[0;32mI (18588) wifi: Wifi Spaces Left:8[0m
+[0;32mI (18588) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (18588) wifi: Received 1400 bytes 0.7821, efee[0m
+[0;32mI (18598) wifi: Wifi Spaces Left:8[0m
+[0;32mI (18598) wifi: Received 1400 bytes 0.7832, 00[0m
+[0;32mI (18608) wifi: Wifi Spaces Left:7[0m
+[0;32mI (18608) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (18608) wifi: Received 360 bytes 0.7835, cdde[0m
+[0;32mI (18618) wifi: Wifi Spaces Left:7[0m
+[0;32mI (18628) wifi: Received 1400 bytes 0.7845, 00[0m
+[0;32mI (18628) wifi: Wifi Spaces Left:6[0m
+[0;32mI (18638) wifi: Received 1400 bytes 0.7856, 3021[0m
+[0;32mI (18638) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (18638) wifi: Wifi Spaces Left:6[0m
+[0;32mI (18658) wifi: Received 1400 bytes 0.7867, 00[0m
+[0;32mI (18658) wifi: Wifi Spaces Left:5[0m
+[0;32mI (18658) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (18668) wifi: Received 1400 bytes 0.7877, 7216[0m
+[0;32mI (18668) wifi: Wifi Spaces Left:5[0m
+[0;32mI (18668) wifi: Received 1400 bytes 0.7888, 00[0m
+[0;32mI (18678) wifi: Wifi Spaces Left:4[0m
+[0;32mI (18678) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (18688) wifi: Received 1400 bytes 0.7899, dedd[0m
+[0;32mI (18688) wifi: Wifi Spaces Left:4[0m
+[0;32mI (18698) wifi: Received 1400 bytes 0.7909, 00[0m
+[0;32mI (18698) wifi: Wifi Spaces Left:3[0m
+[0;32mI (18708) wifi: Received 1400 bytes 0.7920, dddd[0m
+[0;32mI (18708) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (18708) wifi: Wifi Spaces Left:3[0m
+[0;32mI (18718) wifi: Received 1400 bytes 0.7931, 00[0m
+[0;32mI (18718) wifi: Wifi Spaces Left:2[0m
+[0;32mI (18728) wifi: Received 1400 bytes 0.7941, aa99[0m
+[0;32mI (18728) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (18728) wifi: Wifi Spaces Left:2[0m
+[0;32mI (18738) wifi: Received 1400 bytes 0.7952, 00[0m
+[0;32mI (18748) wifi: Wifi Spaces Left:1[0m
+[0;32mI (18758) SPI: SPI  Spaces Left:2 baaa[0m
+[0;32mI (18758) wifi: Received 1400 bytes 0.7963, da76[0m
+[0;32mI (18758) wifi: Wifi Spaces Left:1[0m
+[0;32mI (18758) wifi: Received 1400 bytes 0.7973, 00[0m
+[0;32mI (18768) wifi: Wifi Spaces Left:0[0m
+[0;32mI (18778) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (18778) wifi: Received 1400 bytes 0.7984, deec[0m
+[0;32mI (18778) wifi: Wifi Spaces Left:0[0m
+[0;32mI (18788) wifi: Received 1400 bytes 0.7995, 00[0m
+[0;32mI (18788) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (18788) wifi: Wifi Spaces Left:0[0m
+[0;32mI (18798) wifi: Received 1400 bytes 0.8005, 2554[0m
+[0;32mI (18818) SPI: SPI  Spaces Left:1 7776[0m
+[0;32mI (18828) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (18848) SPI: SPI  Spaces Left:3 6778[0m
+[0;32mI (18868) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (18888) SPI: SPI  Spaces Left:5 9777[0m
+[0;32mI (18898) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (18918) SPI: SPI  Spaces Left:7 668a[0m
+[0;32mI (18938) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (18958) SPI: SPI  Spaces Left:9 4346[0m
+[0;32mI (18958) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (18978) SPI: SPI  Spaces Left:11 551[0m
+[0;32mI (18998) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (19008) wifi: Wifi Spaces Left:11[0m
+[0;32mI (19008) wifi: Received 1400 bytes 0.8016, 00[0m
+[0;32mI (19008) wifi: Wifi Spaces Left:10[0m
+[0;32mI (19008) SPI: SPI  Spaces Left:11 8621[0m
+[0;32mI (19008) wifi: Received 1400 bytes 0.8027, ccce[0m
+[0;32mI (19018) wifi: Wifi Spaces Left:10[0m
+[0;32mI (19028) wifi: Received 1400 bytes 0.8037, 00[0m
+[0;32mI (19028) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19038) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (19038) wifi: Received 1400 bytes 0.8048, edde[0m
+[0;32mI (19048) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19048) wifi: Received 1400 bytes 0.8058, 00[0m
+[0;32mI (19048) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19058) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (19068) SPI: SPI  Spaces Left:10 7899[0m
+[0;32mI (19058) wifi: Received 840 bytes 0.8065, a42[0m
+[0;32mI (19068) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19078) wifi: Received 1400 bytes 0.8076, 8535[0m
+[0;32mI (19078) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19088) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (19088) wifi: Received 1400 bytes 0.8086, 00[0m
+[0;32mI (19098) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19098) wifi: Received 1400 bytes 0.8097, cddd[0m
+[0;32mI (19098) wifi: Wifi Spaces Left:7[0m
+[0;32mI (19108) SPI: SPI  Spaces Left:8 7777[0m
+[0;32mI (19108) wifi: Received 1400 bytes 0.8107, 00[0m
+[0;32mI (19118) wifi: Wifi Spaces Left:7[0m
+[0;32mI (19118) wifi: Received 1400 bytes 0.8118, eeee[0m
+[0;32mI (19128) wifi: Wifi Spaces Left:6[0m
+[0;32mI (19128) wifi: Received 1400 bytes 0.8129, 00[0m
+[0;32mI (19128) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (19138) wifi: Wifi Spaces Left:6[0m
+[0;32mI (19148) wifi: Received 1400 bytes 0.8139, eeee[0m
+[0;32mI (19148) wifi: Wifi Spaces Left:5[0m
+[0;32mI (19158) wifi: Received 1400 bytes 0.8150, 00[0m
+[0;32mI (19158) wifi: Wifi Spaces Left:4[0m
+[0;32mI (19158) SPI: SPI  Spaces Left:5 6533[0m
+[0;32mI (19158) wifi: Received 1400 bytes 0.8161, ba33[0m
+[0;32mI (19168) wifi: Wifi Spaces Left:4[0m
+[0;32mI (19178) wifi: Received 1400 bytes 0.8171, 00[0m
+[0;32mI (19178) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19188) wifi: Received 1400 bytes 0.8182, 6013[0m
+[0;32mI (19188) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (19188) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19208) wifi: Received 1400 bytes 0.8193, 00[0m
+[0;32mI (19208) wifi: Wifi Spaces Left:2[0m
+[0;32mI (19208) SPI: SPI  Spaces Left:3 5665[0m
+[0;32mI (19218) wifi: Received 1400 bytes 0.8203, 2375[0m
+[0;32mI (19218) wifi: Wifi Spaces Left:2[0m
+[0;32mI (19218) wifi: Received 1400 bytes 0.8214, e00[0m
+[0;32mI (19228) wifi: Wifi Spaces Left:1[0m
+[0;32mI (19228) wifi: Received 1400 bytes 0.8225, eeee[0m
+[0;32mI (19228) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (19238) wifi: Wifi Spaces Left:1[0m
+[0;32mI (19248) wifi: Received 600 bytes 0.8229, 8dee[0m
+[0;32mI (19248) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19258) SPI: SPI  Spaces Left:1 5654[0m
+[0;32mI (19278) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (19298) SPI: SPI  Spaces Left:3 6566[0m
+[0;32mI (19298) wifi: Received 1400 bytes 0.8240, eeee[0m
+[0;32mI (19298) wifi: Wifi Spaces Left:2[0m
+[0;32mI (19298) wifi: Received 1400 bytes 0.8251, 00[0m
+[0;32mI (19298) wifi: Wifi Spaces Left:1[0m
+[0;32mI (19308) wifi: Received 1400 bytes 0.8261, 7bee[0m
+[0;32mI (19308) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19318) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (19318) wifi: Received 1400 bytes 0.8272, 00[0m
+[0;32mI (19328) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19338) wifi: Received 1400 bytes 0.8283, 6111[0m
+[0;32mI (19338) SPI: SPI  Spaces Left:1 7765[0m
+[0;32mI (19358) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (19368) SPI: SPI  Spaces Left:3 4454[0m
+[0;32mI (19378) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (19398) SPI: SPI  Spaces Left:5 6677[0m
+[0;32mI (19418) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (19428) SPI: SPI  Spaces Left:7 5532[0m
+[0;32mI (19448) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (19468) SPI: SPI  Spaces Left:9 4323[0m
+[0;32mI (19478) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (19488) SPI: SPI  Spaces Left:11 deee[0m
+[0;32mI (19498) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (19518) SPI: SPI  Spaces Left:13 7b88[0m
+[0;32mI (19538) SPI: SPI  Spaces Left:14 00[0m
+[0;32mI (19538) wifi: Wifi Spaces Left:13[0m
+[0;32mI (19548) wifi: Received 1400 bytes 0.8293, 00[0m
+[0;32mI (19548) wifi: Wifi Spaces Left:12[0m
+[0;32mI (19558) SPI: SPI  Spaces Left:13 1111[0m
+[0;32mI (19558) wifi: Received 1400 bytes 0.8304, ac32[0m
+[0;32mI (19558) wifi: Wifi Spaces Left:12[0m
+[0;32mI (19558) wifi: Received 1400 bytes 0.8314, 00[0m
+[0;32mI (19568) wifi: Wifi Spaces Left:11[0m
+[0;32mI (19568) wifi: Received 1400 bytes 0.8325, a49d[0m
+[0;32mI (19578) wifi: Wifi Spaces Left:10[0m
+[0;32mI (19578) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (19578) wifi: Received 1400 bytes 0.8336, 00[0m
+[0;32mI (19588) wifi: Wifi Spaces Left:10[0m
+[0;32mI (19598) wifi: Received 1400 bytes 0.8346, eeee[0m
+[0;32mI (19598) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19598) SPI: SPI  Spaces Left:10 eeed[0m
+[0;32mI (19608) wifi: Received 1400 bytes 0.8357, 00[0m
+[0;32mI (19608) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19618) wifi: Received 1400 bytes 0.8368, b9aa[0m
+[0;32mI (19618) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19628) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (19638) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (19628) wifi: Received 1400 bytes 0.8378, 00[0m
+[0;32mI (19638) wifi: Wifi Spaces Left:9[0m
+[0;32mI (19648) wifi: Received 1400 bytes 0.8389, eeb7[0m
+[0;32mI (19648) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19648) SPI: SPI  Spaces Left:9 36be[0m
+[0;32mI (19658) wifi: Received 600 bytes 0.8394, 00[0m
+[0;32mI (19658) wifi: Wifi Spaces Left:8[0m
+[0;32mI (19668) wifi: Received 1400 bytes 0.8404, eeee[0m
+[0;32mI (19668) wifi: Wifi Spaces Left:7[0m
+[0;32mI (19678) wifi: Received 1400 bytes 0.8415, 00[0m
+[0;32mI (19678) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (19678) wifi: Wifi Spaces Left:7[0m
+[0;32mI (19688) wifi: Received 1400 bytes 0.8426, deed[0m
+[0;32mI (19698) wifi: Wifi Spaces Left:6[0m
+[0;32mI (19708) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (19708) wifi: Received 1400 bytes 0.8436, 00[0m
+[0;32mI (19708) wifi: Wifi Spaces Left:6[0m
+[0;32mI (19708) wifi: Received 1400 bytes 0.8447, cded[0m
+[0;32mI (19718) wifi: Wifi Spaces Left:5[0m
+[0;32mI (19718) wifi: Received 1400 bytes 0.8458, 00[0m
+[0;32mI (19718) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (19728) wifi: Wifi Spaces Left:5[0m
+[0;32mI (19738) wifi: Received 1400 bytes 0.8468, 5a95[0m
+[0;32mI (19738) wifi: Wifi Spaces Left:4[0m
+[0;32mI (19748) wifi: Received 1400 bytes 0.8479, 00[0m
+[0;32mI (19748) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19748) SPI: SPI  Spaces Left:4 bdee[0m
+[0;32mI (19758) wifi: Received 1400 bytes 0.8489, bb61[0m
+[0;32mI (19768) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19778) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (19778) wifi: Received 1400 bytes 0.8500, 00[0m
+[0;32mI (19788) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19798) SPI: SPI  Spaces Left:4 efee[0m
+[0;32mI (19798) wifi: Received 1400 bytes 0.8511, 9bcc[0m
+[0;32mI (19798) wifi: Wifi Spaces Left:3[0m
+[0;32mI (19808) wifi: Received 1400 bytes 0.8521, 00[0m
+[0;32mI (19808) wifi: Wifi Spaces Left:2[0m
+[0;32mI (19808) wifi: Received 1400 bytes 0.8532, eeee[0m
+[0;32mI (19818) wifi: Wifi Spaces Left:1[0m
+[0;32mI (19818) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (19818) wifi: Received 1400 bytes 0.8543, 00[0m
+[0;32mI (19828) wifi: Wifi Spaces Left:1[0m
+[0;32mI (19828) wifi: Received 1400 bytes 0.8553, 2134[0m
+[0;32mI (19838) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19838) wifi: Received 1400 bytes 0.8564, 00[0m
+[0;32mI (19848) SPI: SPI  Spaces Left:1 cdde[0m
+[0;32mI (19848) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19858) wifi: Received 1400 bytes 0.8575, 7853[0m
+[0;32mI (19858) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (19858) wifi: Wifi Spaces Left:0[0m
+[0;32mI (19878) wifi: Received 1400 bytes 0.8585, 00[0m
+[0;32mI (19888) SPI: SPI  Spaces Left:1 3021[0m
+[0;32mI (19898) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (19918) SPI: SPI  Spaces Left:3 7216[0m
+[0;32mI (19938) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (19958) SPI: SPI  Spaces Left:5 dedd[0m
+[0;32mI (19968) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (19988) SPI: SPI  Spaces Left:7 dddd[0m
+[0;32mI (20008) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (20018) SPI: SPI  Spaces Left:9 aa99[0m
+[0;32mI (20038) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (20058) SPI: SPI  Spaces Left:11 da76[0m
+[0;32mI (20068) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (20078) wifi: Wifi Spaces Left:11[0m
+[0;32mI (20088) SPI: SPI  Spaces Left:12 deec[0m
+[0;32mI (20108) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (20088) wifi: Received 1400 bytes 0.8596, 9824[0m
+[0;32mI (20108) wifi: Wifi Spaces Left:12[0m
+[0;32mI (20118) wifi: Received 1400 bytes 0.8607, 00[0m
+[0;32mI (20118) wifi: Wifi Spaces Left:11[0m
+[0;32mI (20118) wifi: Received 1400 bytes 0.8617, eeed[0m
+[0;32mI (20118) wifi: Wifi Spaces Left:10[0m
+[0;32mI (20128) SPI: SPI  Spaces Left:11 2554[0m
+[0;32mI (20128) wifi: Received 1400 bytes 0.8628, 00[0m
+[0;32mI (20138) wifi: Wifi Spaces Left:10[0m
+[0;32mI (20138) wifi: Received 1400 bytes 0.8639, ddee[0m
+[0;32mI (20148) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20148) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (20158) wifi: Received 1400 bytes 0.8649, 00[0m
+[0;32mI (20158) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20168) wifi: Received 1400 bytes 0.8660, bc88[0m
+[0;32mI (20168) wifi: Wifi Spaces Left:8[0m
+[0;32mI (20178) wifi: Received 1400 bytes 0.8671, 00[0m
+[0;32mI (20178) SPI: SPI  Spaces Left:9 ccce[0m
+[0;32mI (20178) wifi: Wifi Spaces Left:8[0m
+[0;32mI (20188) wifi: Received 1400 bytes 0.8681, 948c[0m
+[0;32mI (20188) wifi: Wifi Spaces Left:7[0m
+[0;32mI (20198) wifi: Received 1400 bytes 0.8692, 00[0m
+[0;32mI (20198) wifi: Wifi Spaces Left:6[0m
+[0;32mI (20198) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (20208) wifi: Received 1400 bytes 0.8703, 5775[0m
+[0;32mI (20218) wifi: Wifi Spaces Left:6[0m
+[0;32mI (20228) SPI: SPI  Spaces Left:7 edde[0m
+[0;32mI (20228) wifi: Received 1400 bytes 0.8713, 00[0m
+[0;32mI (20228) wifi: Wifi Spaces Left:6[0m
+[0;32mI (20238) wifi: Received 1400 bytes 0.8724, eeee[0m
+[0;32mI (20238) wifi: Wifi Spaces Left:5[0m
+[0;32mI (20238) wifi: Received 1240 bytes 0.8733, 00[0m
+[0;32mI (20248) wifi: Wifi Spaces Left:4[0m
+[0;32mI (20248) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (20248) wifi: Received 1400 bytes 0.8744, 00[0m
+[0;32mI (20258) wifi: Wifi Spaces Left:4[0m
+[0;32mI (20268) wifi: Received 1400 bytes 0.8755, 46ae[0m
+[0;32mI (20268) wifi: Wifi Spaces Left:3[0m
+[0;32mI (20278) wifi: Received 80 bytes 0.8755, 00[0m
+[0;32mI (20278) SPI: SPI  Spaces Left:4 a42[0m
+[0;32mI (20278) wifi: Wifi Spaces Left:3[0m
+[0;32mI (20288) wifi: Received 1400 bytes 0.8766, 00[0m
+[0;32mI (20288) wifi: Wifi Spaces Left:2[0m
+[0;32mI (20298) SPI: SPI  Spaces Left:3 8535[0m
+[0;32mI (20298) wifi: Received 1400 bytes 0.8777, eeee[0m
+[0;32mI (20308) wifi: Wifi Spaces Left:2[0m
+[0;32mI (20318) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (20318) wifi: Received 1400 bytes 0.8787, 00[0m
+[0;32mI (20318) wifi: Wifi Spaces Left:2[0m
+[0;32mI (20328) wifi: Received 1400 bytes 0.8798, eeee[0m
+[0;32mI (20328) wifi: Wifi Spaces Left:1[0m
+[0;32mI (20338) wifi: Received 1400 bytes 0.8808, 00[0m
+[0;32mI (20338) wifi: Wifi Spaces Left:0[0m
+[0;32mI (20338) SPI: SPI  Spaces Left:1 cddd[0m
+[0;32mI (20338) wifi: Received 1400 bytes 0.8819, edee[0m
+[0;32mI (20348) wifi: Wifi Spaces Left:0[0m
+[0;32mI (20358) wifi: Received 1400 bytes 0.8830, 00[0m
+[0;32mI (20368) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (20388) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (20398) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (20418) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (20438) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (20458) SPI: SPI  Spaces Left:6 ba33[0m
+[0;32mI (20468) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (20488) SPI: SPI  Spaces Left:8 6013[0m
+[0;32mI (20508) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (20528) SPI: SPI  Spaces Left:10 2375[0m
+[0;32mI (20538) SPI: SPI  Spaces Left:11 e00[0m
+[0;32mI (20558) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (20558) wifi: Wifi Spaces Left:11[0m
+[0;32mI (20558) wifi: Received 1400 bytes 0.8840, 14c7[0m
+[0;32mI (20558) wifi: Wifi Spaces Left:10[0m
+[0;32mI (20568) wifi: Received 1400 bytes 0.8851, 00[0m
+[0;32mI (20568) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20578) wifi: Received 1400 bytes 0.8862, ab9b[0m
+[0;32mI (20578) SPI: SPI  Spaces Left:10 8dee[0m
+[0;32mI (20588) SPI: SPI  Spaces Left:10 eeee[0m
+[0;32mI (20578) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20598) wifi: Received 1400 bytes 0.8872, 00[0m
+[0;32mI (20598) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20608) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (20618) wifi: Received 1400 bytes 0.8883, eeee[0m
+[0;32mI (20618) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20628) SPI: SPI  Spaces Left:10 7bee[0m
+[0;32mI (20628) wifi: Received 1400 bytes 0.8894, 00[0m
+[0;32mI (20628) wifi: Wifi Spaces Left:9[0m
+[0;32mI (20628) wifi: Received 1400 bytes 0.8904, eeee[0m
+[0;32mI (20638) wifi: Wifi Spaces Left:8[0m
+[0;32mI (20638) wifi: Received 1400 bytes 0.8915, 00[0m
+[0;32mI (20648) wifi: Wifi Spaces Left:7[0m
+[0;32mI (20648) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (20648) wifi: Received 1400 bytes 0.8926, 3432[0m
+[0;32mI (20658) wifi: Wifi Spaces Left:7[0m
+[0;32mI (20668) wifi: Received 1400 bytes 0.8936, 00[0m
+[0;32mI (20668) wifi: Wifi Spaces Left:6[0m
+[0;32mI (20678) wifi: Received 1400 bytes 0.8947, 7269[0m
+[0;32mI (20678) SPI: SPI  Spaces Left:7 6111[0m
+[0;32mI (20678) wifi: Wifi Spaces Left:6[0m
+[0;32mI (20688) wifi: Received 1400 bytes 0.8958, 00[0m
+[0;32mI (20688) wifi: Wifi Spaces Left:5[0m
+[0;32mI (20698) wifi: Received 1400 bytes 0.8968, 5ace[0m
+[0;32mI (20698) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (20698) wifi: Wifi Spaces Left:5[0m
+[0;32mI (20708) wifi: Received 1400 bytes 0.8979, 00[0m
+[0;32mI (20718) wifi: Wifi Spaces Left:4[0m
+[0;32mI (20718) wifi: Received 1400 bytes 0.8990, eeee[0m
+[0;32mI (20728) wifi: Wifi Spaces Left:3[0m
+[0;32mI (20728) SPI: SPI  Spaces Left:4 ac32[0m
+[0;32mI (20728) wifi: Received 1400 bytes 0.9000, 00[0m
+[0;32mI (20738) wifi: Wifi Spaces Left:3[0m
+[0;32mI (20748) wifi: Received 1400 bytes 0.9011, 9bde[0m
+[0;32mI (20748) wifi: Wifi Spaces Left:2[0m
+[0;32mI (20748) wifi: Received 960 bytes 0.9018, 00[0m
+[0;32mI (20758) wifi: Wifi Spaces Left:1[0m
+[0;32mI (20758) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (20758) wifi: Received 1400 bytes 0.9029, 00[0m
+[0;32mI (20768) wifi: Wifi Spaces Left:1[0m
+[0;32mI (20778) wifi: Received 1400 bytes 0.9039, 69ce[0m
+[0;32mI (20778) wifi: Wifi Spaces Left:0[0m
+[0;32mI (20788) wifi: Received 1400 bytes 0.9050, 00[0m
+[0;32mI (20788) SPI: SPI  Spaces Left:1 a49d[0m
+[0;32mI (20788) wifi: Wifi Spaces Left:0[0m
+[0;32mI (20798) wifi: Received 1400 bytes 0.9061, d98a[0m
+[0;32mI (20808) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (20828) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (20848) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (20868) SPI: SPI  Spaces Left:4 b9aa[0m
+[0;32mI (20888) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (20898) SPI: SPI  Spaces Left:6 eeb7[0m
+[0;32mI (20918) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (20928) SPI: SPI  Spaces Left:8 eeee[0m
+[0;32mI (20938) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (20958) SPI: SPI  Spaces Left:10 deed[0m
+[0;32mI (20978) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (20988) SPI: SPI  Spaces Left:12 cded[0m
+[0;32mI (20998) wifi: Wifi Spaces Left:11[0m
+[0;32mI (21008) wifi: Received 1400 bytes 0.9071, 00[0m
+[0;32mI (21008) wifi: Wifi Spaces Left:10[0m
+[0;32mI (21008) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (21018) wifi: Received 1400 bytes 0.9082, dddd[0m
+[0;32mI (21018) wifi: Wifi Spaces Left:10[0m
+[0;32mI (21018) wifi: Received 1400 bytes 0.9093, 00[0m
+[0;32mI (21028) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21028) SPI: SPI  Spaces Left:10 5a95[0m
+[0;32mI (21038) wifi: Received 1400 bytes 0.9103, eddc[0m
+[0;32mI (21038) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21048) wifi: Received 1400 bytes 0.9114, 00[0m
+[0;32mI (21048) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (21048) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21058) wifi: Received 1400 bytes 0.9125, 2794[0m
+[0;32mI (21068) wifi: Wifi Spaces Left:8[0m
+[0;32mI (21068) wifi: Received 1400 bytes 0.9135, 00[0m
+[0;32mI (21068) SPI: SPI  Spaces Left:9 bb61[0m
+[0;32mI (21078) wifi: Wifi Spaces Left:8[0m
+[0;32mI (21078) wifi: Received 1400 bytes 0.9146, 9733[0m
+[0;32mI (21088) wifi: Wifi Spaces Left:7[0m
+[0;32mI (21088) wifi: Received 1400 bytes 0.9157, 00[0m
+[0;32mI (21098) wifi: Wifi Spaces Left:6[0m
+[0;32mI (21098) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (21098) wifi: Received 1400 bytes 0.9167, eeee[0m
+[0;32mI (21108) wifi: Wifi Spaces Left:6[0m
+[0;32mI (21118) wifi: Received 1400 bytes 0.9178, 00[0m
+[0;32mI (21118) wifi: Wifi Spaces Left:5[0m
+[0;32mI (21118) SPI: SPI  Spaces Left:6 9bcc[0m
+[0;32mI (21128) wifi: Received 1400 bytes 0.9189, cedd[0m
+[0;32mI (21138) wifi: Wifi Spaces Left:5[0m
+[0;32mI (21138) wifi: Received 1400 bytes 0.9199, 00[0m
+[0;32mI (21138) wifi: Wifi Spaces Left:4[0m
+[0;32mI (21148) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (21148) wifi: Received 680 bytes 0.9204, 78b9[0m
+[0;32mI (21158) wifi: Wifi Spaces Left:4[0m
+[0;32mI (21158) wifi: Received 1400 bytes 0.9215, 26d[0m
+[0;32mI (21168) wifi: Wifi Spaces Left:3[0m
+[0;32mI (21168) SPI: SPI  Spaces Left:4 eeee[0m
+[0;32mI (21168) wifi: Received 1400 bytes 0.9226, 00[0m
+[0;32mI (21178) wifi: Wifi Spaces Left:3[0m
+[0;32mI (21188) wifi: Received 1400 bytes 0.9236, e930[0m
+[0;32mI (21188) wifi: Wifi Spaces Left:2[0m
+[0;32mI (21188) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (21198) wifi: Received 120 bytes 0.9237, 00[0m
+[0;32mI (21198) wifi: Wifi Spaces Left:2[0m
+[0;32mI (21208) wifi: Received 1400 bytes 0.9248, 00[0m
+[0;32mI (21208) wifi: Wifi Spaces Left:1[0m
+[0;32mI (21218) SPI: SPI  Spaces Left:2 2134[0m
+[0;32mI (21218) wifi: Received 1400 bytes 0.9259, eded[0m
+[0;32mI (21228) wifi: Wifi Spaces Left:1[0m
+[0;32mI (21228) wifi: Received 1400 bytes 0.9269, 00[0m
+[0;32mI (21238) wifi: Wifi Spaces Left:0[0m
+[0;32mI (21238) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (21238) wifi: Received 1400 bytes 0.9280, ddde[0m
+[0;32mI (21248) wifi: Wifi Spaces Left:0[0m
+[0;32mI (21248) wifi: Received 1400 bytes 0.9291, 00[0m
+[0;32mI (21258) SPI: SPI  Spaces Left:1 7853[0m
+[0;32mI (21278) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (21298) SPI: SPI  Spaces Left:3 9824[0m
+[0;32mI (21318) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (21328) SPI: SPI  Spaces Left:5 eeed[0m
+[0;32mI (21348) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (21368) SPI: SPI  Spaces Left:7 ddee[0m
+[0;32mI (21378) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (21398) SPI: SPI  Spaces Left:9 bc88[0m
+[0;32mI (21418) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (21428) SPI: SPI  Spaces Left:11 948c[0m
+[0;32mI (21448) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (21458) wifi: Wifi Spaces Left:11[0m
+[0;32mI (21468) wifi: Received 1400 bytes 0.9301, eddd[0m
+[0;32mI (21468) SPI: SPI  Spaces Left:12 5775[0m
+[0;32mI (21468) wifi: Wifi Spaces Left:11[0m
+[0;32mI (21468) wifi: Received 1400 bytes 0.9312, 00[0m
+[0;32mI (21478) wifi: Wifi Spaces Left:10[0m
+[0;32mI (21488) wifi: Received 1400 bytes 0.9323, eddd[0m
+[0;32mI (21488) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21488) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (21488) wifi: Received 1400 bytes 0.9333, 00[0m
+[0;32mI (21498) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21508) wifi: Received 1400 bytes 0.9344, 300[0m
+[0;32mI (21508) wifi: Wifi Spaces Left:8[0m
+[0;32mI (21508) wifi: Received 1400 bytes 0.9355, 00[0m
+[0;32mI (21518) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (21518) wifi: Wifi Spaces Left:8[0m
+[0;32mI (21528) wifi: Received 1400 bytes 0.9365, 03a[0m
+[0;32mI (21528) wifi: Wifi Spaces Left:7[0m
+[0;32mI (21538) wifi: Received 1400 bytes 0.9376, 00[0m
+[0;32mI (21538) wifi: Wifi Spaces Left:6[0m
+[0;32mI (21538) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (21548) wifi: Received 1400 bytes 0.9386, deed[0m
+[0;32mI (21558) wifi: Wifi Spaces Left:6[0m
+[0;32mI (21558) wifi: Received 1400 bytes 0.9397, 00[0m
+[0;32mI (21568) wifi: Wifi Spaces Left:5[0m
+[0;32mI (21568) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (21568) wifi: Received 1400 bytes 0.9408, 00[0m
+[0;32mI (21578) wifi: Wifi Spaces Left:5[0m
+[0;32mI (21588) wifi: Received 1400 bytes 0.9418, 00[0m
+[0;32mI (21588) wifi: Wifi Spaces Left:4[0m
+[0;32mI (21598) wifi: Received 1400 bytes 0.9429, aeed[0m
+[0;32mI (21598) SPI: SPI  Spaces Left:5 46ae[0m
+[0;32mI (21598) wifi: Wifi Spaces Left:4[0m
+[0;32mI (21608) wifi: Received 1400 bytes 0.9440, 00[0m
+[0;32mI (21608) wifi: Wifi Spaces Left:3[0m
+[0;32mI (21618) wifi: Received 1400 bytes 0.9450, eeed[0m
+[0;32mI (21618) wifi: Wifi Spaces Left:2[0m
+[0;32mI (21618) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (21628) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (21648) SPI: SPI  Spaces Left:5 eeee[0m
+[0;32mI (21618) wifi: Received 1400 bytes 0.9461, 00[0m
+[0;32mI (21648) wifi: Wifi Spaces Left:4[0m
+[0;32mI (21658) wifi: Received 1400 bytes 0.9472, eedd[0m
+[0;32mI (21658) wifi: Wifi Spaces Left:3[0m
+[0;32mI (21668) wifi: Received 1400 bytes 0.9482, 00[0m
+[0;32mI (21668) wifi: Wifi Spaces Left:2[0m
+[0;32mI (21668) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (21668) wifi: Received 920 bytes 0.9489, deee[0m
+[0;32mI (21678) wifi: Wifi Spaces Left:2[0m
+[0;32mI (21678) wifi: Received 1400 bytes 0.9500, acdd[0m
+[0;32mI (21688) wifi: Wifi Spaces Left:1[0m
+[0;32mI (21688) SPI: SPI  Spaces Left:2 eeee[0m
+[0;32mI (21688) wifi: Received 1400 bytes 0.9511, 00[0m
+[0;32mI (21698) wifi: Wifi Spaces Left:1[0m
+[0;32mI (21708) wifi: Received 1400 bytes 0.9521, 720[0m
+[0;32mI (21708) wifi: Wifi Spaces Left:0[0m
+[0;32mI (21718) wifi: Received 1400 bytes 0.9532, 00[0m
+[0;32mI (21718) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (21718) wifi: Wifi Spaces Left:0[0m
+[0;32mI (21738) wifi: Received 1400 bytes 0.9543, d80[0m
+[0;32mI (21738) SPI: SPI  Spaces Left:1 edee[0m
+[0;32mI (21758) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (21778) SPI: SPI  Spaces Left:3 14c7[0m
+[0;32mI (21788) SPI: SPI  Spaces Left:4 00[0m
+[0;32mI (21808) SPI: SPI  Spaces Left:5 ab9b[0m
+[0;32mI (21828) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (21838) SPI: SPI  Spaces Left:7 eeee[0m
+[0;32mI (21858) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (21878) SPI: SPI  Spaces Left:9 eeee[0m
+[0;32mI (21888) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (21908) SPI: SPI  Spaces Left:11 3432[0m
+[0;32mI (21928) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (21938) wifi: Wifi Spaces Left:11[0m
+[0;32mI (21948) wifi: Received 1400 bytes 0.9553, 00[0m
+[0;32mI (21948) wifi: Wifi Spaces Left:11[0m
+[0;32mI (21948) SPI: SPI  Spaces Left:12 7269[0m
+[0;32mI (21948) wifi: Received 1400 bytes 0.9564, 04[0m
+[0;32mI (21948) wifi: Wifi Spaces Left:10[0m
+[0;32mI (21958) wifi: Received 1400 bytes 0.9575, 00[0m
+[0;32mI (21958) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21968) SPI: SPI  Spaces Left:10 00[0m
+[0;32mI (21968) wifi: Received 1400 bytes 0.9585, 5ade[0m
+[0;32mI (21978) wifi: Wifi Spaces Left:9[0m
+[0;32mI (21988) wifi: Received 1400 bytes 0.9596, 00[0m
+[0;32mI (21988) wifi: Wifi Spaces Left:8[0m
+[0;32mI (21988) wifi: Received 1400 bytes 0.9607, c920[0m
+[0;32mI (21988) SPI: SPI  Spaces Left:9 5ace[0m
+[0;32mI (21998) wifi: Wifi Spaces Left:8[0m
+[0;32mI (22008) wifi: Received 1400 bytes 0.9617, 00[0m
+[0;32mI (22008) wifi: Wifi Spaces Left:7[0m
+[0;32mI (22008) wifi: Received 1400 bytes 0.9628, eeee[0m
+[0;32mI (22018) wifi: Wifi Spaces Left:6[0m
+[0;32mI (22018) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (22018) wifi: Received 1400 bytes 0.9639, e00[0m
+[0;32mI (22028) wifi: Wifi Spaces Left:6[0m
+[0;32mI (22038) wifi: Received 1400 bytes 0.9649, eeee[0m
+[0;32mI (22038) wifi: Wifi Spaces Left:5[0m
+[0;32mI (22048) wifi: Received 1400 bytes 0.9660, eedd[0m
+[0;32mI (22048) SPI: SPI  Spaces Left:6 eeee[0m
+[0;32mI (22048) wifi: Wifi Spaces Left:5[0m
+[0;32mI (22058) wifi: Received 1400 bytes 0.9670, 00[0m
+[0;32mI (22058) wifi: Wifi Spaces Left:4[0m
+[0;32mI (22068) wifi: Received 1400 bytes 0.9681, eddd[0m
+[0;32mI (22068) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (22068) wifi: Wifi Spaces Left:4[0m
+[0;32mI (22078) wifi: Received 1400 bytes 0.9692, 00[0m
+[0;32mI (22088) wifi: Wifi Spaces Left:3[0m
+[0;32mI (22098) SPI: SPI  Spaces Left:4 9bde[0m
+[0;32mI (22098) wifi: Received 760 bytes 0.9698, b614[0m
+[0;32mI (22098) wifi: Wifi Spaces Left:3[0m
+[0;32mI (22108) wifi: Received 1400 bytes 0.9708, ee80[0m
+[0;32mI (22108) wifi: Wifi Spaces Left:2[0m
+[0;32mI (22118) wifi: Received 1400 bytes 0.9719, 00[0m
+[0;32mI (22118) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (22118) wifi: Wifi Spaces Left:2[0m
+[0;32mI (22128) wifi: Received 1400 bytes 0.9730, 6acb[0m
+[0;32mI (22128) wifi: Wifi Spaces Left:1[0m
+[0;32mI (22138) SPI: SPI  Spaces Left:2 00[0m
+[0;32mI (22138) wifi: Received 1400 bytes 0.9740, 00[0m
+[0;32mI (22148) wifi: Wifi Spaces Left:1[0m
+[0;32mI (22148) wifi: Received 1400 bytes 0.9751, eeee[0m
+[0;32mI (22158) wifi: Wifi Spaces Left:0[0m
+[0;32mI (22158) SPI: SPI  Spaces Left:1 69ce[0m
+[0;32mI (22168) Main: Manage Tasks Idle[0m
+[0;32mI (22158) wifi: Received 1400 bytes 0.9761, 00[0m
+[0;32mI (22168) wifi: Wifi Spaces Left:0[0m
+[0;32mI (22178) wifi: Received 1400 bytes 0.9772, 469d[0m
+[0;32mI (22178) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (22198) SPI: SPI  Spaces Left:2 d98a[0m
+[0;32mI (22218) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (22238) SPI: SPI  Spaces Left:4 dddd[0m
+[0;32mI (22258) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (22268) SPI: SPI  Spaces Left:6 eddc[0m
+[0;32mI (22288) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (22308) SPI: SPI  Spaces Left:8 2794[0m
+[0;32mI (22328) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (22338) SPI: SPI  Spaces Left:10 9733[0m
+[0;32mI (22358) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (22378) SPI: SPI  Spaces Left:12 eeee[0m
+[0;32mI (22378) wifi: Wifi Spaces Left:11[0m
+[0;32mI (22388) wifi: Received 1400 bytes 0.9783, 00[0m
+[0;32mI (22388) wifi: Wifi Spaces Left:10[0m
+[0;32mI (22398) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (22398) wifi: Received 1400 bytes 0.9793, 248c[0m
+[0;32mI (22398) wifi: Wifi Spaces Left:10[0m
+[0;32mI (22398) wifi: Received 1400 bytes 0.9804, 00[0m
+[0;32mI (22408) wifi: Wifi Spaces Left:9[0m
+[0;32mI (22408) wifi: Received 1400 bytes 0.9815, bb62[0m
+[0;32mI (22418) wifi: Wifi Spaces Left:8[0m
+[0;32mI (22418) SPI: SPI  Spaces Left:9 cedd[0m
+[0;32mI (22418) wifi: Received 1400 bytes 0.9825, 00[0m
+[0;32mI (22428) wifi: Wifi Spaces Left:8[0m
+[0;32mI (22428) wifi: Received 1400 bytes 0.9836, eeee[0m
+[0;32mI (22438) wifi: Wifi Spaces Left:7[0m
+[0;32mI (22438) SPI: SPI  Spaces Left:8 00[0m
+[0;32mI (22438) wifi: Received 1400 bytes 0.9847, 00[0m
+[0;32mI (22448) wifi: Wifi Spaces Left:7[0m
+[0;32mI (22458) wifi: Received 1400 bytes 0.9857, deed[0m
+[0;32mI (22458) wifi: Wifi Spaces Left:6[0m
+[0;32mI (22468) SPI: SPI  Spaces Left:7 78b9[0m
+[0;32mI (22468) wifi: Received 1400 bytes 0.9868, 00[0m
+[0;32mI (22468) wifi: Wifi Spaces Left:6[0m
+[0;32mI (22478) SPI: SPI  Spaces Left:7 26d[0m
+[0;32mI (22478) wifi: Received 1400 bytes 0.9879, eeee[0m
+[0;32mI (22488) wifi: Wifi Spaces Left:6[0m
+[0;32mI (22498) wifi: Received 1400 bytes 0.9889, 00[0m
+[0;32mI (22498) wifi: Wifi Spaces Left:5[0m
+[0;32mI (22498) wifi: Received 1400 bytes 0.9900, eeee[0m
+[0;32mI (22498) SPI: SPI  Spaces Left:6 00[0m
+[0;32mI (22508) wifi: Wifi Spaces Left:5[0m
+[0;32mI (22518) wifi: Received 1400 bytes 0.9911, 00[0m
+[0;32mI (22518) wifi: Wifi Spaces Left:4[0m
+[0;32mI (22518) wifi: Received 1400 bytes 0.9921, eeee[0m
+[0;32mI (22528) wifi: Wifi Spaces Left:3[0m
+[0;32mI (22528) SPI: SPI  Spaces Left:4 e930[0m
+[0;32mI (22528) wifi: Received 1400 bytes 0.9932, 00[0m
+[0;32mI (22538) wifi: Wifi Spaces Left:3[0m
+[0;32mI (22548) wifi: Received 1400 bytes 0.9943, eeee[0m
+[0;32mI (22548) wifi: Wifi Spaces Left:2[0m
+[0;32mI (22558) wifi: Received 1400 bytes 0.9953, 00[0m
+[0;32mI (22558) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (22558) wifi: Wifi Spaces Left:2[0m
+[0;32mI (22568) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (22568) wifi: Received 1400 bytes 0.9964, eeee[0m
+[0;32mI (22578) wifi: Wifi Spaces Left:2[0m
+[0;32mI (22578) wifi: Received 1000 bytes 0.9972, 00[0m
+[0;32mI (22588) wifi: Wifi Spaces Left:1[0m
+[0;32mI (22588) wifi: Received 1400 bytes 0.9982, 00[0m
+[0;32mI (22598) SPI: SPI  Spaces Left:2 eded[0m
+[0;32mI (22598) wifi: Wifi Spaces Left:1[0m
+[0;32mI (22608) wifi: Received 1400 bytes 0.9993, eeee[0m
+[0;32mI (22608) wifi: Wifi Spaces Left:0[0m
+[0;32mI (22618) wifi: Received 944 bytes 1.0000, 00[0m
+[0;32mI (22618) SPI: SPI  Spaces Left:1 00[0m
+[0;32mI (22638) SPI: SPI  Spaces Left:2 ddde[0m
+[0;32mI (22658) SPI: SPI  Spaces Left:3 00[0m
+[0;32mI (22678) SPI: SPI  Spaces Left:4 eddd[0m
+[0;32mI (22698) SPI: SPI  Spaces Left:5 00[0m
+[0;32mI (22708) SPI: SPI  Spaces Left:6 eddd[0m
+[0;32mI (22728) SPI: SPI  Spaces Left:7 00[0m
+[0;32mI (22748) SPI: SPI  Spaces Left:8 300[0m
+[0;32mI (22768) SPI: SPI  Spaces Left:9 00[0m
+[0;32mI (22778) SPI: SPI  Spaces Left:10 03a[0m
+[0;32mI (22798) SPI: SPI  Spaces Left:11 00[0m
+[0;32mI (22818) SPI: SPI  Spaces Left:12 deed[0m
+[0;32mI (22818) wifi: Wifi Spaces Left:11[0m
+[0;31mE (22818) wifi: recv 0 bytes[0m
+[0;32mI (22818) wifi: Done Receiving[0m
+[0;32mI (22828) SPI: SPI  Spaces Left:12 00[0m
+[0;32mI (22848) SPI: SPI  Spaces Left:13 00[0m
+[0;32mI (22868) SPI: SPI  Spaces Left:14 00[0m
+[0;32mI (22878) SPI: SPI  Spaces Left:15 aeed[0m
+[0;32mI (22898) SPI: SPI  Spaces Left:16 00[0m
+[0;32mI (22918) SPI: SPI  Spaces Left:17 eeed[0m
+[0;32mI (22928) SPI: SPI  Spaces Left:18 00[0m
+[0;32mI (22948) SPI: SPI  Spaces Left:19 eedd[0m
+[0;32mI (22968) SPI: SPI  Spaces Left:20 00[0m
+[0;32mI (22978) SPI: SPI  Spaces Left:21 deee[0m
+[0;32mI (22998) SPI: SPI  Spaces Left:22 acdd[0m
+[0;32mI (23008) SPI: SPI  Spaces Left:23 00[0m
+[0;32mI (23028) SPI: SPI  Spaces Left:24 720[0m
+[0;32mI (23048) SPI: SPI  Spaces Left:25 00[0m
+[0;32mI (23058) SPI: SPI  Spaces Left:26 d80[0m
+[0;32mI (23078) SPI: SPI  Spaces Left:27 00[0m
+[0;32mI (23098) SPI: SPI  Spaces Left:28 04[0m
+[0;32mI (23108) SPI: SPI  Spaces Left:29 00[0m
+[0;32mI (23128) SPI: SPI  Spaces Left:30 5ade[0m
+[0;32mI (23148) SPI: SPI  Spaces Left:31 00[0m
+[0;32mI (23158) SPI: SPI  Spaces Left:32 c920[0m
+[0;32mI (23178) SPI: SPI  Spaces Left:33 00[0m
+[0;32mI (23198) SPI: SPI  Spaces Left:34 eeee[0m
+[0;32mI (23208) SPI: SPI  Spaces Left:35 e00[0m
+[0;32mI (23228) SPI: SPI  Spaces Left:36 eeee[0m
+[0;32mI (23248) SPI: SPI  Spaces Left:37 eedd[0m
+[0;32mI (23258) SPI: SPI  Spaces Left:38 00[0m
+[0;32mI (23278) SPI: SPI  Spaces Left:39 eddd[0m
+[0;32mI (23298) SPI: SPI  Spaces Left:40 00[0m
+[0;32mI (23308) SPI: SPI  Spaces Left:41 b614[0m
+[0;32mI (23318) SPI: SPI  Spaces Left:42 ee80[0m
+[0;32mI (23338) SPI: SPI  Spaces Left:43 00[0m
+[0;32mI (23358) SPI: SPI  Spaces Left:44 6acb[0m
+[0;32mI (23368) SPI: SPI  Spaces Left:45 00[0m
+[0;32mI (23388) SPI: SPI  Spaces Left:46 eeee[0m
+[0;32mI (23408) SPI: SPI  Spaces Left:47 00[0m
+[0;32mI (23418) SPI: SPI  Spaces Left:48 469d[0m
+[0;32mI (23438) SPI: SPI  Spaces Left:49 00[0m
+[0;32mI (23458) SPI: SPI  Spaces Left:50 248c[0m
+[0;32mI (23468) SPI: SPI  Spaces Left:51 00[0m
+[0;32mI (23488) SPI: SPI  Spaces Left:52 bb62[0m
+[0;32mI (23508) SPI: SPI  Spaces Left:53 00[0m
+[0;32mI (23518) SPI: SPI  Spaces Left:54 eeee[0m
+[0;32mI (23538) SPI: SPI  Spaces Left:55 00[0m
+[0;32mI (23558) SPI: SPI  Spaces Left:56 deed[0m
+[0;32mI (23578) SPI: SPI  Spaces Left:57 00[0m
+[0;32mI (23588) SPI: SPI  Spaces Left:58 eeee[0m
+[0;32mI (23608) SPI: SPI  Spaces Left:59 00[0m
+[0;32mI (23628) SPI: SPI  Spaces Left:60 eeee[0m
+[0;32mI (23638) SPI: SPI  Spaces Left:61 00[0m
+[0;32mI (23658) SPI: SPI  Spaces Left:62 eeee[0m
+[0;32mI (23678) SPI: SPI  Spaces Left:63 00[0m
+[0;32mI (23688) SPI: SPI  Spaces Left:64 eeee[0m
+[0;32mI (23708) SPI: SPI  Spaces Left:65 00[0m
+[0;32mI (23728) SPI: SPI  Spaces Left:66 eeee[0m
+[0;32mI (23738) SPI: SPI  Spaces Left:67 00[0m
+[0;32mI (23748) SPI: SPI  Spaces Left:68 00[0m
+[0;32mI (23768) SPI: SPI  Spaces Left:69 eeee[0m
+[0;32mI (23788) SPI: SPI  Spaces Left:70 00[0m
+[0;32mI (23808) SPI: Last Byte Written Packet Size: 944[0m
